@@ -497,6 +497,8 @@ $("#addFirma").on("click", function(){
             <video id="video-${formCount}" autoplay></video>
             <button id="take-photo-button-${formCount}" class="btn btn-primary add-option-btn">Tomar Foto</button>
             <canvas id="canvas-${formCount}" style="display: none;"></canvas>
+            <img id="captured-image-${formCount}" alt="Imagen Capturada" style="display: none;">
+            <button id="download-button-${formCount}" class="btn btn-primary add-option-btn" style="display: none;">Descargar Foto</button>
         `);
     
         // Esperar a que se cargue el contenido antes de activar la funcionalidad de tomar una foto

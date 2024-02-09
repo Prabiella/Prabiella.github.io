@@ -172,12 +172,14 @@ function mostrarImagen() {
     
     
 
-      
+
     /* Photo */
-    function setupPhotoTaking(videoId, takePhotoButtonId, canvasId) {
+    function setupPhotoTaking(videoId, takePhotoButtonId, canvasId, imgId, downloadButtonId) {
         const video = document.getElementById(videoId);
         const takePhotoButton = document.getElementById(takePhotoButtonId);
         const canvas = document.getElementById(canvasId);
+        const img = document.getElementById(imgId);
+        const downloadButton = document.getElementById(downloadButtonId);
         const context = canvas.getContext('2d');
     
         // Verificar si el navegador admite getUserMedia
@@ -202,9 +204,29 @@ function mostrarImagen() {
             canvas.width = video.videoWidth;
             canvas.height = video.videoHeight;
             context.drawImage(video, 0, 0, canvas.width, canvas.height);
-            // Convertir la imagen del canvas a una URL de datos
-            const dataURL = canvas.toDataURL('image/png');
-            // Abrir la imagen en una nueva pestaña
-            window.open(dataURL);
+            
+            // Mostrar la imagen capturada en el elemento img
+            img.src = canvas.toDataURL('image/png');
+            // Mostrar el botón de descarga
+            downloadButton.style.display = 'block';
+
         });
-    }
+
+         // Evento para descargar la imagen
+    downloadButton.addEventListener('click', function() {
+        // Obtener la URL de datos de la imagen desde el elemento img
+        const imgDataURL = img.src;
+
+        // Crear un enlace temporal
+        const downloadLink = document.createElement('a');
+        downloadLink.href = imgDataURL;
+        downloadLink.download = 'foto.png'; // Nombre del archivo que se descargará
+
+        // Simular un clic en el enlace para iniciar la descarga
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+
+        // Eliminar el enlace temporal
+        document.body.removeChild(downloadLink);
+    });
+}
