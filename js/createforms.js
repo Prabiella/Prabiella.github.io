@@ -503,8 +503,11 @@ $("#addFirma").on("click", function(){
     
         // Esperar a que se cargue el contenido antes de activar la funcionalidad de tomar una foto
         // Para ello, llamamos a setupPhotoTaking dentro de un setTimeout
-        setTimeout(function() {
-            setupPhotoTaking(`video-${formCount}`, `take-photo-button-${formCount}`, `canvas-${formCount}`);
+
+
+         // Esperar a que se cargue el contenido antes de activar la funcionalidad
+    setTimeout(function() {
+        setupPhotoTaking(`video-${formCount}`, `take-photo-button-${formCount}`, `canvas-${formCount}`, `captured-image-${formCount}`, `download-button-${formCount}`);
         }, 0);
     });
 
