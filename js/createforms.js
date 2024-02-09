@@ -494,18 +494,25 @@ $("#addFirma").on("click", function(){
     $("#addPhoto").on("click", function() {
         formCount++;
         $("#thisForm").append(`
+
+        <div class="formInput col-md-6 my-2">
             <video id="video-${formCount}" autoplay></video>
-            <button id="take-photo-button-${formCount}" class="btn btn-primary add-option-btn">Tomar Foto</button>
+            <div class="d-grid gap-2 col-12 mx-auto my-3"> 
+                 <button id="take-photo-button-${formCount}" class="btn btn-dark btn-lg add-option-btn">Tomar Foto</button>
+            </div>
+           
             <canvas id="canvas-${formCount}" style="display: none;"></canvas>
             <img id="captured-image-${formCount}" alt="Imagen Capturada" style="display: none;">
-            <button id="download-button-${formCount}" class="btn btn-primary add-option-btn" style="display: none;">Descargar Foto</button>
+            <div class="d-grid gap-2 col-12 mx-auto my-3">
+                <button id="download-button-${formCount}" class="btn btn-warning btn-lg  add-option-btn" style="display: none;">Descargar Foto</button>
+            </div>
+
+            <button type="button" class="btn delete-button"><i class="fas fa-times"></i></button>
+        </div>
         `);
     
         // Esperar a que se cargue el contenido antes de activar la funcionalidad de tomar una foto
         // Para ello, llamamos a setupPhotoTaking dentro de un setTimeout
-
-
-         // Esperar a que se cargue el contenido antes de activar la funcionalidad
     setTimeout(function() {
         setupPhotoTaking(`video-${formCount}`, `take-photo-button-${formCount}`, `canvas-${formCount}`, `captured-image-${formCount}`, `download-button-${formCount}`);
         }, 0);
