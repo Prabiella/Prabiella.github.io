@@ -473,33 +473,38 @@ $("#addFirma").on("click", function(){
     //          ADD A PHOTO
     //-----------------------------------------
 
-    $("#addPhoto").on("click", function(){
+  /*   $("#addPhoto").on("click", function(){
         formCount++
         $("#thisForm").append(`
             <div class="formInput col-md-6 my-2">
-            <div>
-                <select name="listaDeDispositivos" id="listaDeDispositivos"></select>
-                <button id="boton">Tomar foto</button>
+         
 
-                    <div class="frame container">
-                        <img id="frame-img" class="img-fluid imgDesk" src="assets/MASCARA.png" alt="Marco">
-                        <img id="frame-img" class="img-fluid imgMob" src="assets/mascara_movil.svg" alt="Marco">
-                        <img id="frame-canva" class="img-fluid" src="assets/marco_vendedor_autorizado.png" alt="Marco" style="display: none;">
-                        <img id="frame-canva2" class="img-fluid" src="assets/marco.svg" alt="Marco" style="display: none;">
-                        <img id="frame-canva-movil" class="img-fluid" src="assets/marco_movil.svg" alt="Marco" style="display: none;">
-                    </div>
-                    <div class="overlay">
-                        <video id="video" class="img-fluid" width="389" height="514.7" autoplay></video>
-                    </div>
-            </div>
-            <video muted="muted" id="video"></video>
-            <canvas id="canvas" style="display: none;"></canvas>
+        <button id="tomarFoto">Tomar Foto</button>
+        <div id="videoContainer"></div>
+
+
+
             </div>
         `)
     })
 
+ */
 
 
+    $("#addPhoto").on("click", function() {
+        formCount++;
+        $("#thisForm").append(`
+            <video id="video-${formCount}" autoplay></video>
+            <button id="take-photo-button-${formCount}" class="btn btn-primary add-option-btn">Tomar Foto</button>
+            <canvas id="canvas-${formCount}" style="display: none;"></canvas>
+        `);
+    
+        // Esperar a que se cargue el contenido antes de activar la funcionalidad de tomar una foto
+        // Para ello, llamamos a setupPhotoTaking dentro de un setTimeout
+        setTimeout(function() {
+            setupPhotoTaking(`video-${formCount}`, `take-photo-button-${formCount}`, `canvas-${formCount}`);
+        }, 0);
+    });
 
 
 

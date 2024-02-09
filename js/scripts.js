@@ -172,63 +172,39 @@ function mostrarImagen() {
     
     
 
+      
     /* Photo */
-
-
-    // Función para verificar el sistema operativo
-	function verificarDispositivo() {
-		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-		// Verificar si es iOS
-		if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-			// Mostrar modal o alerta
-			alert("La página no es compatible con dispositivos iOS.");
-		}
-	}
-
-	// Ejecutar la función al cargar la página
-	window.onload = function() {
-		verificarDispositivo();
-	};
-
-
-    // Función para verificar el sistema operativo y navegador
-	function verificarDispositivo() {
-		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-		// Verificar si es iOS
-		if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-			// Mostrar modal o alerta
-			alert("La página no es compatible con dispositivos iOS, para tomarte la foto tambien lo puedes hacer desde tu computadora o dispositivo Android");
-		}
-
-		// Verificar si es Safari
-		if (/^((?!chrome|android).)*safari/i.test(userAgent)) {
-			// Mostrar modal o alerta
-			alert("La página no es compatible con el navegador Safari, lamentamos el inconveniente, puedes tomarte la foto desde un navegador Chrome o Firefox");
-		}
-	}
-
-	// Ejecutar la función al cargar la página
-	window.onload = function() {
-		verificarDispositivo();
-	};
-
-    // Verificar si es un dispositivo móvil
-	const esDispositivoMovil = /Mobi/.test(navigator.userAgent);
-  
-	// Función para cargar los scripts según el tipo de dispositivo
-	function cargarScriptsSegunDispositivo() {
-	  if (esDispositivoMovil) {
-		const scriptMovil = document.createElement('script');
-		scriptMovil.src = 'script-movil.js';
-		document.body.appendChild(scriptMovil);
-	  } else {
-		const scriptDesktop = document.createElement('script');
-		scriptDesktop.src = 'script-desktop.js';
-		document.body.appendChild(scriptDesktop);
-	  }
-	}
-  
-	// Cargar los scripts según el tipo de dispositivo
-	cargarScriptsSegunDispositivo();
+    function setupPhotoTaking(videoId, takePhotoButtonId, canvasId) {
+        const video = document.getElementById(videoId);
+        const takePhotoButton = document.getElementById(takePhotoButtonId);
+        const canvas = document.getElementById(canvasId);
+        const context = canvas.getContext('2d');
+    
+        // Verificar si el navegador admite getUserMedia
+        navigator.getUserMedia = navigator.getUserMedia ||
+                                 navigator.webkitGetUserMedia ||
+                                 navigator.mozGetUserMedia ||
+                                 navigator.msGetUserMedia;
+    
+        // Si getUserMedia es compatible, mostrar el stream de video
+        if (navigator.getUserMedia) {
+            navigator.getUserMedia({ video: true }, function(stream) {
+                video.srcObject = stream;
+            }, function(err) {
+                console.error('Ocurrió un error al acceder a la cámara.', err);
+            });
+        } else {
+            alert('Lo siento, tu navegador no soporta getUserMedia.');
+        }
+    
+        // Evento para tomar la foto
+        takePhotoButton.addEventListener('click', function() {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            // Convertir la imagen del canvas a una URL de datos
+            const dataURL = canvas.toDataURL('image/png');
+            // Abrir la imagen en una nueva pestaña
+            window.open(dataURL);
+        });
+    }
