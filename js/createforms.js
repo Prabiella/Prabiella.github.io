@@ -379,10 +379,6 @@ $("#addHealthCare").on("click", function(){
                     </div>
                 </div>
 
-
-
-
-
                 <button type="button" class="btn delete-button"><i class="fas fa-times"></i></button>
                 </span>
             </div>
