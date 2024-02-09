@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="30" viewBox="0 0 37 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_170" data-name="Rectángulo 170" width="22" height="18" fill="#25336c"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_229" data-name="Grupo 229" transform="translate(-38 -536)">
+    <g id="Grupo_212" data-name="Grupo 212" transform="translate(46 543)">
+      <g id="Grupo_211" data-name="Grupo 211" clip-path="url(#clip-path)">
+        <path id="Trazado_289" data-name="Trazado 289" d="M6.188,10.688a4.5,4.5,0,1,0-4.5-4.5,4.5,4.5,0,0,0,4.5,4.5m6.188-4.5a6.189,6.189,0,0,1-5.344,6.131v1.744H8.719a.844.844,0,1,1,0,1.688H7.031v1.406a.844.844,0,0,1-1.687,0V15.75H3.656a.844.844,0,0,1,0-1.687H5.344V12.319a6.188,6.188,0,1,1,7.031-6.131m-2.816,6.49a7.316,7.316,0,0,0,1.42-.966,4.5,4.5,0,1,0,3.084-7.774,4.579,4.579,0,0,0-.885.088,7.381,7.381,0,0,0-.7-1.572,6.24,6.24,0,0,1,1.585-.2A6.164,6.164,0,0,1,17.8,3.506l1.821-1.818h-1.9a.844.844,0,0,1,0-1.688h3.938A.842.842,0,0,1,22.5.844V4.781a.844.844,0,0,1-1.687,0V2.88L18.995,4.7a6.188,6.188,0,0,1-9.435,7.981" fill="#25336c"/>
+      </g>
+    </g>
+    <rect id="Rectángulo_176" data-name="Rectángulo 176" width="37" height="30" transform="translate(38 536)" fill="none"/>
+  </g>
+</svg>
