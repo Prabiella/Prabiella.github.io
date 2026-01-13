@@ -1,0 +1,39 @@
+/* Colors Fishinter login */
+/* Colors input Fishinter */
+.authentication-bg-fishinte {
+  background: url("/assets/img/backgrounds/greca-login.svg") center/cover no-repeat, linear-gradient(180deg, rgb(236, 212, 118) 0%, rgb(207, 180, 98) 49%, rgb(127, 91, 44) 100%);
+  background-color: #ECD476;
+}
+
+.parrafo-login {
+  color: #2A3039;
+}
+
+.form-check-input-fishinter {
+  border-color: var(#2A3039);
+  background-color: var(#2A3039);
+}
+
+.form-check-input-fishinter:checked {
+  border-color: var(#2A3039);
+  background-color: var(#2A3039);
+}
+
+.bg-color-btn-main-login {
+  background: var(red);
+}
+
+.search-form {
+  color: #BDA65C !important;
+}
+
+.btn-primary {
+  background-color: #BDA65C;
+  border: 1px solid #BDA65C;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #65510e;
+  border: 1px solid #65510e;
+}/*# sourceMappingURL=fishinter-styles.css.map */
