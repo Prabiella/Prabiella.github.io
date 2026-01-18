@@ -886,9 +886,9 @@
     ]
   },
   "suggestions": {
-    "Buscar": [
+    "Popular Searches": [
       {
-        "name": "Empresas",
+        "name": "Analytics",
         "icon": "tabler-smart-home",
         "url": "index.html"
       },
@@ -898,14 +898,80 @@
         "url": "dashboards-crm.html"
       },
       {
-        "name": "Analitics",
+        "name": "eCommerce",
         "icon": "tabler-smart-home",
         "url": "app-ecommerce-dashboard.html"
       },
       {
-        "name": "Administradores",
+        "name": "User List",
         "icon": "tabler-list-numbers",
         "url": "app-user-list.html"
+      }
+    ],
+    "Apps & Pages": [
+      {
+        "name": "Calendar",
+        "icon": "tabler-calendar",
+        "url": "app-calendar.html"
+      },
+      {
+        "name": "Invoice List",
+        "icon": "tabler-list-numbers",
+        "url": "app-invoice-list.html"
+      },
+      {
+        "name": "Account Settings",
+        "icon": "tabler-user",
+        "url": "pages-account-settings-account.html"
+      },
+      {
+        "name": "Dialog Examples",
+        "icon": "tabler-square",
+        "url": "modal-examples.html"
+      }
+    ],
+    "User Interface": [
+      {
+        "name": "Typography",
+        "icon": "tabler-typography",
+        "url": "ui-typography.html"
+      },
+      {
+        "name": "Advanced Cards",
+        "icon": "tabler-id",
+        "url": "cards-advance.html"
+      },
+      {
+        "name": "Tabler",
+        "icon": "tabler-pencil",
+        "url": "icons-tabler.html"
+      },
+      {
+        "name": "Widget Cards",
+        "icon": "tabler-id",
+        "url": "cards-advance.html"
+      }
+    ],
+    "Forms & Charts": [
+      {
+        "name": "Form Layouts",
+        "icon": "tabler-file",
+        "url": "form-layouts-vertical.html"
+      },
+      {
+        "name": "Form Validation",
+        "icon": "tabler-checkbox",
+        "url": "form-validation.html"
+      },
+      {
+        "name": "Form Wizard",
+        "icon": "tabler-text-wrap-disabled",
+        "url": "form-wizard-numbered.html"
+      },
+      {
+        "name": "E-Charts",
+        "icon": "tabler-chart-line",
+        "url": "charts-apex.html"
       }
     ]
   }

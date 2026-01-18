@@ -9,70 +9,76 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Form validation for Add new record
     if (formAuthentication && typeof FormValidation !== 'undefined') {
-      FormValidation.formValidation(formAuthentication, {
+
+   FormValidation.formValidation(formAuthentication, {
         fields: {
           username: {
             validators: {
               notEmpty: {
-                message: 'Please enter username'
+                message: 'Por favor ingrese el usuario'
               },
               stringLength: {
-                min: 6,
-                message: 'Username must be more than 6 characters'
+                max: 6,
+                message: 'El usuario debe tener máximo 6 caracteres'
+              },
+              regexp: {
+                regexp: /^[a-zA-Z0-9]+$/,
+                message: 'El usuario no puede contener arrobas ni caracteres especiales'
               }
             }
           },
+
           email: {
             validators: {
               notEmpty: {
-                message: 'Please enter your email'
+                 message: 'Por favor ingrese su correo electrónico'
               },
               emailAddress: {
-                message: 'Please enter a valid email address'
+                message: 'Por favor ingrese un correo electrónico válido'
               }
             }
           },
           'email-username': {
             validators: {
               notEmpty: {
-                message: 'Please enter email / username'
+                message: 'Por favor ingrese correo electrónico o nombre de usuario'
               },
               stringLength: {
                 min: 6,
-                message: 'Username must be more than 6 characters'
+                message: 'El nombre de usuario debe tener más de 6 caracteres'
               }
             }
           },
           password: {
             validators: {
               notEmpty: {
-                message: 'Please enter your password'
+               message: 'Por favor ingrese su contraseña'
               },
               stringLength: {
                 min: 6,
-                message: 'Password must be more than 6 characters'
+                message: 'La contraseña debe tener más de 6 caracteres'
               }
             }
           },
           'confirm-password': {
             validators: {
               notEmpty: {
-                message: 'Please confirm password'
+                message: 'Por favor confirma la contraseña'
               },
               identical: {
                 compare: () => formAuthentication.querySelector('[name="password"]').value,
-                message: 'The password and its confirmation do not match'
+                message: 'La contraseña y su confirmación no coinciden'
               },
               stringLength: {
                 min: 6,
-                message: 'Password must be more than 6 characters'
+                message: 'La contraseña debe tener más de 6 caracteres'
               }
             }
           },
           terms: {
             validators: {
               notEmpty: {
-                message: 'Please agree to terms & conditions'
+                message: 'Por favor acepte los términos y condiciones'
               }
             }
           }
@@ -94,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           });
         }
-      });
+      }); 
     }
 
     // Two Steps Verification for numeral input mask

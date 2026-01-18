@@ -110,13 +110,13 @@
             <div class="d-flex align-items-center justify-content-between mb-6 gap-4 login-header">
               <div>
                 <h2 class="mb-1 title-login">Bienvenido</h2>
-                <h5 class="mb-0 parrafo-login">Por favor inicia sesión</h5>
+                <h5 class="mb-0 parrafo-login">Crea tu cuenta</h5>
               </div>
         
               <!-- SVG -->
               <div class="login-header-image">
                 <img
-                  src="assets/img/login/icon-login.png"
+                  src="assets/img/login/icon-register.png"
                   alt="Ilustración login"
                   class="img-fluid"
                 />
@@ -124,6 +124,17 @@
             </div>
         
             <form id="formAuthentication" class="mb-6" action="index.html" method="GET">
+              <div class="mb-6 form-control-validation">
+                <label for="username" class="form-label parrafo-login">Usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  placeholder="Ingresa un nombre de usuario"
+                  autofocus />
+              </div>
+
               <div class="mb-6 form-control-validation">
                 <label for="email" class="form-label parrafo-login">Correo</label>
                 <input
@@ -155,14 +166,12 @@
               <div class="my-8">
                 <div class="d-flex justify-content-between">
                   <div class="form-check mb-0 ms-2">
-                    <input class="form-check-input" type="checkbox" id="remember-me" />
-                    <label class="form-check-label parrafo-login" for="remember-me">
-                      Mantener la sesión
+                    <input class="form-check-input" type="checkbox" name="terms" id="terms" />
+                    <label class="form-check-label parrafo-login" for="terms">
+                        Acepto términos y condiciones
                     </label>
                   </div>
-                  <a href="recupera-contra.html">
-                    <p class="mb-0 parrafo-login">¿Olvidaste la contraseña?</p>
-                  </a>
+                 
                 </div>
               </div>
         
@@ -172,9 +181,9 @@
             </form>
         
             <p class="text-center parrafo-login">
-              <span>¿No tienes cuenta?</span>
-              <a href="registro.html">
-                <span class="parrafo-login">Crea una cuenta</span>
+              <span>Si ya tienes cuenta</span>
+              <a href="login.html">
+                <span class="parrafo-login">inicia sesión</span>
               </a>
             </p>
         
