@@ -112,7 +112,7 @@
 
                   <!-- Empresas -->
                   <li class="menu-item ">
-                     <a href="#" class="menu-link menu-toggle d-flex align-items-center gap-2">
+                     <a href="empresas.html" class="menu-link  d-flex align-items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-buildings">
                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                            <path d="M4 21v-15c0 -1 1 -2 2 -2h5c1 0 2 1 2 2v15" />
@@ -129,18 +129,7 @@
                         </svg>
                         <div>Empresas</div>
                      </a>
-                     <ul class="menu-sub">
-                        <li class="menu-item ">
-                           <a href="#" class="menu-link">
-                              <div>link 01</div>
-                           </a>
-                        </li>
-                        <li class="menu-item">
-                           <a href="#" class="menu-link">
-                              <div >link 02</div>
-                           </a>
-                        </li>
-                     </ul>
+                   
                   </li>
                   <!-- Administradores -->
                   <li class="menu-item">
@@ -325,7 +314,7 @@
                                                 </ul>
                                              </div>
                                              <button class="btn create-new btn-primary" tabindex="0" type="button"  data-bs-toggle="modal"
-                                                data-bs-target="#addNewAddress">
+                                                data-bs-target="#addNewUser">
                                              <span>
                                              <span class="d-flex align-items-center gap-2">
                                              <i class="icon-base ti tabler-plus icon-sm"></i>
@@ -341,135 +330,136 @@
                                  </div>
                                  <div class="justify-content-between dt-layout-table">
                                     <div class="d-md-flex justify-content-between align-items-center dt-layout-full table-responsive">
-                                       <table  class="table datatables-basic dataTable dtr-column" id="empresasTable" aria-describedby="DataTables_Table_0_info">
+                                      
+
+                                       <table class="table datatables-basic dataTable dtr-column" id="empresasTable" aria-describedby="DataTables_Table_0_info">
                                           <thead>
-                                             <tr>
-                                                <th>Nombre</th>
-                                                <th>Apellido paterno</th>
-                                                <th>Apellido materno</th>
-                                                <th>Email</th>
-                                                <th>Teléfono</th>
-                                                <th>Rol</th>
-                                                <th>Empresa</th>
-                                                <th>Acciones</th>
-                                                <th>Estatus</th>
-                                              </tr>
+                                            <tr>
+                                              <th>Nombre</th>
+                                              <th>Apellido paterno</th>
+                                              <th>Apellido materno</th>
+                                              <th>Email</th>
+                                              <th>Teléfono</th>
+                                              <th>Rol</th>
+                                              <th>Empresa</th>
+                                              <th>Estatus</th>
+                                              <th>Acciones</th>
+                                             
+                                            </tr>
                                           </thead>
                                           <tbody>
-                                             <!-- filas -->
-                                          <tbody>
+                                            <!-- filas -->
+                                            <tbody>
                                              <tr>
-                                                <td>Update01</td>
-                                                <td>789789</td>
-                                                <td>756431</td>
-                                                <td>1234</td>
-                                                <td>768</td>
-                                                <td>
-                                                   <span class="badge bg-label-success">Activo</span>
-                                                </td>
-                                                <td>
-                                                   <div class="d-flex align-items-center gap-1">
-                                                      <!-- Ver (ojo) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Eliminar (basura) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Más acciones (3 puntos) -->
-                                                      <div class="dropdown">
-                                                         <button
-                                                            class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect"
-                                                            type="button"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                         <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                         </button>
-                                                         <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                         </div>
-                                                      </div>
+                                               <td>Carlos</td>
+                                               <td>Pérez</td>
+                                               <td>Sánchez</td>
+                                               <td>carlos.perez@globex.com</td>
+                                               <td>555-123-4567</td>
+                                               <td>Soporte</td>
+                                               <td>Globex</td>
+                                               <td>
+                                                 <span class="badge bg-label-warning">Suspendido</span>
+                                               </td>
+                                               <td>
+                                                 <div class="d-flex align-items-center gap-1">
+                                                   <!-- Ver (ojo) -->
+                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                     <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
+                                                   </span>
+                                                   <!-- Eliminar (basura) -->
+                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                     <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
+                                                   </span>
+                                                   <!-- Más acciones (3 puntos) -->
+                                                   <div class="dropdown">
+                                                     <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                       <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
+                                                     </button>
+                                                     <div class="dropdown-menu dropdown-menu-end">
+                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
+                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
+                                                     </div>
                                                    </div>
-                                                </td>
+                                                 </div>
+                                               </td>
                                              </tr>
+                                           
                                              <tr>
-                                                <td>Update02</td>
-                                                <td>789789</td>
-                                                <td>756431</td>
-                                                <td>1234</td>
-                                                <td>768</td>
-                                                <td>
-                                                   <span class="badge bg-label-secondary">Inactivo</span>
-                                                </td>
-                                                <td>
-                                                   <div class="d-flex align-items-center gap-1">
-                                                      <!-- Ver (ojo) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Eliminar (basura) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Más acciones (3 puntos) -->
-                                                      <div class="dropdown">
-                                                         <button
-                                                            class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect"
-                                                            type="button"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                         <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                         </button>
-                                                         <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                         </div>
-                                                      </div>
+                                               <td>Ana</td>
+                                               <td>López</td>
+                                               <td>Martínez</td>
+                                               <td>ana.lopez@globex.com</td>
+                                               <td>555-987-6543</td>
+                                               <td>Soporte</td>
+                                               <td>Globex</td>
+                                               <td>
+                                                 <span class="badge bg-label-secondary">Inactivo</span>
+                                               </td>
+                                               <td>
+                                                 <div class="d-flex align-items-center gap-1">
+                                                   <!-- Ver (ojo) -->
+                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                     <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
+                                                   </span>
+                                                   <!-- Eliminar (basura) -->
+                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                     <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
+                                                   </span>
+                                                   <!-- Más acciones (3 puntos) -->
+                                                   <div class="dropdown">
+                                                     <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                       <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
+                                                     </button>
+                                                     <div class="dropdown-menu dropdown-menu-end">
+                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
+                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
+                                                     </div>
                                                    </div>
-                                                </td>
+                                                 </div>
+                                               </td>
                                              </tr>
+                                           
                                              <tr>
-                                                <td>Update02</td>
-                                                <td>789789</td>
-                                                <td>756431</td>
-                                                <td>1234</td>
-                                                <td>768</td>
-                                                <td>
-                                                   <span class="badge bg-label-warning">Pendiente</span>
-                                                </td>
-                                                <td>
-                                                   <div class="d-flex align-items-center gap-1">
-                                                      <!-- Ver (ojo) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Eliminar (basura) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Más acciones (3 puntos) -->
-                                                      <div class="dropdown">
-                                                         <button
-                                                            class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect"
-                                                            type="button"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                         <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                         </button>
-                                                         <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                         </div>
-                                                      </div>
+                                               <td>Luis</td>
+                                               <td>Ramírez</td>
+                                               <td>Torres</td>
+                                               <td>luis.ramirez@globex.com</td>
+                                               <td>555-456-7890</td>
+                                               <td>Soporte</td>
+                                               <td>Globex</td>
+                                               <td>
+                                                 <span class="badge bg-label-success">Activo</span>
+                                               </td>
+                                               <td>
+                                                 <div class="d-flex align-items-center gap-1">
+                                                   <!-- Ver (ojo) -->
+                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                     <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
+                                                   </span>
+                                                   <!-- Eliminar (basura) -->
+                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                     <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
+                                                   </span>
+                                                   <!-- Más acciones (3 puntos) -->
+                                                   <div class="dropdown">
+                                                     <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                       <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
+                                                     </button>
+                                                     <div class="dropdown-menu dropdown-menu-end">
+                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
+                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
+                                                     </div>
                                                    </div>
-                                                </td>
+                                                 </div>
+                                               </td>
                                              </tr>
-                                          </tbody>
+                                           </tbody>
+                                           
                                           <!-- filas -->
                                           </tbody>
-                                       </table>
+                                        </table>
+                                        
                                     </div>
                                  </div>
                               </div>
@@ -482,56 +472,74 @@
                   <!-- Modals -->
                   <!-- Add New Address Modal -->
                   <!-- End/Modals -->
-                  <div class="modal fade" id="addNewAddress" tabindex="-1" aria-hidden="true">
+                  <div class="modal fade" id="addNewUser" tabindex="-1" aria-hidden="true">
                      <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
                         <div class="modal-content">
                            <div class="modal-body">
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               <div class="text-center mb-6">
-                                 <h4 class="address-title mb-2 text-white">Nueva empresa</h4>
-                                 <p class="address-subtitle text-white">Agrega una nueva empresa</p>
+                                 <h4 class="address-title mb-2 text-white">Nuevo Usuario</h4>
+                                 <p class="address-subtitle text-white">Agrega los datos del usuario</p>
                               </div>
                               <form id="addNewAddressForm" class="row g-4" onsubmit="return false">
-                                 <!-- Nombre empresa -->
+                                 <!-- Nombre usuario -->
                                  <div class="col-12">
-                                    <label class="form-label">Nombre de la empresa</label>
-                                    <input type="text" class="form-control" placeholder="Global Trust" required>
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre" required>
                                  </div>
-                                 <!-- Montos -->
-                                 <div class="col-md-6">
-                                    <label class="form-label">Monto asignado</label>
-                                    <input type="number" class="form-control" placeholder="0" min="0">
+                                  <!-- Apellido Paterno -->
+                                  <div class="col-12 col-md-6">
+                                    <label class="form-label">Apellido Paterno</label>
+                                    <input type="text" class="form-control" placeholder="Apellido Paterno" required>
                                  </div>
-                                 <div class="col-md-6">
-                                    <label class="form-label">Monto gastado</label>
-                                    <input type="number" class="form-control" placeholder="0" min="0">
+                                   <!-- Apellido Materno -->
+                                   <div class="col-12 col-md-6">
+                                    <label class="form-label">Apellido Materno</label>
+                                    <input type="text" class="form-control" placeholder="Apellido Materno" required>
                                  </div>
-                                 <!-- Tarjetas asignadas -->
-                                 <div class="col-md-6">
-                                    <label class="form-label">Tarjetas asignadas</label>
-                                    <select class="form-select" multiple>
-                                       <option>Tarjeta 001</option>
-                                       <option>Tarjeta 002</option>
-                                       <option>Tarjeta 003</option>
-                                    </select>
+
+                                 <!-- Correo electrónico -->
+                                 <div class="col-12 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                                    <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleFormControlInput1"
+                                    placeholder="nombre@dominio.com" />
                                  </div>
-                                 <!-- Tarjetas utilizadas -->
-                                 <div class="col-md-6">
-                                    <label class="form-label">Tarjetas utilizadas</label>
-                                    <select class="form-select" multiple>
-                                       <option>Tarjeta 001</option>
-                                       <option>Tarjeta 002</option>
-                                    </select>
-                                 </div>
-                                 <!-- Estatus -->
-                                 <div class="col-12">
-                                    <label class="form-label">Estatus</label>
+
+                                    <!-- Teléfono -->
+                                    <div class="col-12 col-md-6">
+                                       <label class="form-label">Teléfono</label>
+                                       <input type="number" class="form-control" placeholder="555-555-555" required>
+                                    </div>
+
+                                     <!-- Rol -->
+                                 <div class="col-12 col-md-6">
+                                    <label class="form-label">Rol</label>
                                     <select class="form-select">
-                                       <option value="activo">Activo</option>
-                                       <option value="inactivo">Inactivo</option>
-                                       <option value="pendiente">Pendiente</option>
+                                       <option value="activo">Soporte</option>
+                                       <option value="inactivo">Admin</option>
+                                       <option value="pendiente">Superadmin</option>
                                     </select>
                                  </div>
+
+                                        <!-- Rol -->
+                                        <div class="col-12 col-md-6">
+                                          <label class="form-label">Estatus</label>
+                                          <select class="form-select">
+                                             <option value="activo">Activo</option>
+                                             <option value="inactivo">Inactivo</option>
+                                             <option value="pendiente">Pendiente</option>
+                                          </select>
+                                       </div>
+      
+                                         <!-- Empresa -->
+                                   <div class="col-12">
+                                    <label class="form-label">Empresa</label>
+                                    <input type="text" class="form-control" placeholder="Nombre de la empresa" required>
+                                 </div>
+
                                  <!-- Botones -->
                                  <div class="col-12 text-center mt-4">
                                     <button type="submit" class="btn btn-primary me-3">
