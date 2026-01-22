@@ -672,112 +672,217 @@ document.addEventListener('DOMContentLoaded', function (e) {
     budgetChart.render();
   }
 
-  // Earning Reports Bar Chart
-  // --------------------------------------------------------------------
-  const reportBarChartEl = document.querySelector('#reportBarChart'),
-    reportBarChartConfig = {
-      chart: {
-        height: 230,
-        type: 'bar',
-        toolbar: {
-          show: false
-        }
-      },
-      plotOptions: {
-        bar: {
-          barHeight: '60%',
-          columnWidth: '60%',
-          startingShape: 'rounded',
-          endingShape: 'rounded',
-          borderRadius: 4,
-          distributed: true
-        }
-      },
-      grid: {
-        show: false,
-        padding: {
-          top: -20,
-          bottom: 0,
-          left: -10,
-          right: -10
-        }
-      },
-      colors: [
-        config.colors_label.primary,
-        config.colors_label.primary,
-        config.colors_label.primary,
-        config.colors_label.primary,
-        config.colors.primary,
-        config.colors_label.primary,
-        config.colors_label.primary
+  // Obtener mes actual (0-11)
+const currentMonth = new Date().getMonth();
+
+// Colores base
+const baseColor = '#516583';
+const activeColor = '#DBC16A';
+
+// Generar array de colores dinámico
+const monthColors = Array(12).fill(baseColor);
+monthColors[currentMonth] = activeColor; // destacar mes actual
+
+// Earning Reports Bar Chart - Months Highlight
+// --------------------------------------------------------------------
+const reportBarChartEl = document.querySelector('#reportBarChart'),
+  reportBarChartConfig = {
+    chart: {
+      height: 230,
+      type: 'bar',
+      toolbar: {
+        show: false
+      }
+    },
+    plotOptions: {
+      bar: {
+        barHeight: '60%',
+        columnWidth: '60%',
+        startingShape: 'rounded',
+        endingShape: 'rounded',
+        borderRadius: 4,
+        distributed: true
+      }
+    },
+    grid: {
+      show: false,
+      padding: {
+        top: -20,
+        bottom: 0,
+        left: -10,
+        right: -10
+      }
+    },
+    colors: monthColors, // 👈 dinámico
+    dataLabels: {
+      enabled: false
+    },
+    series: [
+      {
+        name: 'Tarjetas entregadas',
+        data: [120, 150, 90, 200, 180, 220, 170, 160, 140, 190, 210, 230],
+        
+      }
+    ],
+    legend: {
+      show: false
+    },
+    xaxis: {
+      categories: [
+        'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
+        'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'
       ],
-      dataLabels: {
-        enabled: false
-      },
-      series: [
-        {
-          data: [40, 95, 60, 45, 90, 50, 75]
-        }
-      ],
-      legend: {
+      axisBorder: {
         show: false
       },
-      xaxis: {
-        categories: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
-        axisBorder: {
-          show: false
-        },
-        axisTicks: {
-          show: false
-        },
-        labels: {
-          style: {
-            colors: labelColor,
-            fontSize: '13px'
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        show: false
+      }
+    },
+    responsive: [
+      {
+        breakpoint: 1025,
+        options: {
+          chart: {
+            height: 190
           }
         }
       },
-      yaxis: {
-        labels: {
-          show: false
-        }
-      },
-      responsive: [
-        {
-          breakpoint: 1025,
-          options: {
-            chart: {
-              height: 190
-            }
-          }
-        },
-        {
-          breakpoint: 769,
-          options: {
-            chart: {
-              height: 250
-            }
-          }
-        }
-      ],
-      states: {
-        hover: {
-          filter: {
-            type: 'none'
-          }
-        },
-        active: {
-          filter: {
-            type: 'none'
+      {
+        breakpoint: 769,
+        options: {
+          chart: {
+            height: 250
           }
         }
       }
-    };
-  if (typeof reportBarChartEl !== undefined && reportBarChartEl !== null) {
-    const barChart = new ApexCharts(reportBarChartEl, reportBarChartConfig);
-    barChart.render();
-  }
+    ],
+    states: {
+      hover: {
+        filter: { type: 'none' }
+      },
+      active: {
+        filter: { type: 'none' }
+      }
+    }
+  };
 
+if (typeof reportBarChartEl !== undefined && reportBarChartEl !== null) {
+  const barChart = new ApexCharts(reportBarChartEl, reportBarChartConfig);
+  barChart.render();
+}
+
+
+/* Company graphics */
+
+// Data
+const companyData = [1820, 1480, 450, 1410, 390, 1222, 330, 300, 270, 250];
+
+// Obtener índice del valor mayor
+const maxIndex = companyData.indexOf(Math.max(...companyData));
+
+// Colores
+const baseColorCompany = '#516583';
+const activeColorCompany = '#DBC16A';
+
+// Generar colores dinámicos
+const companyColors = Array(companyData.length).fill(baseColorCompany);
+companyColors[maxIndex] = activeColorCompany;
+
+// Chart
+// --------------------------------------------------------------------
+const companyBarChartEl = document.querySelector('#companyBarChart'),
+  companyBarChartConfig = {
+    chart: {
+      height: 300,
+      type: 'bar',
+      toolbar: {
+        show: false
+      }
+    },
+    plotOptions: {
+      bar: {
+        barHeight: '60%',
+        columnWidth: '60%',
+        startingShape: 'rounded',
+        endingShape: 'rounded',
+        borderRadius: 4,
+        distributed: true
+      }
+    },
+    grid: {
+      show: false,
+      padding: {
+        top: 10,
+        bottom: 0,
+        left: -10,
+        right: -10
+      }
+    },
+    colors: companyColors, // 👈 highlight automático
+    dataLabels: {
+      enabled: false
+    },
+    series: [
+      {
+        name: 'Tarjetas entregadas',
+        data: companyData
+      }
+    ],
+    legend: {
+      show: false
+    },
+    xaxis: {
+      categories: [
+        'TechNova Solutions',
+        'InnovaCorp',
+        'Grupo Altavista',
+        'DataSoft Systems',
+        'NetGlobal',
+        'SmartLogix',
+        'BlueWave Tech',
+        'CoreDynamics',
+        'Quantum Labs',
+        'Visionary Group'
+      ],
+      axisBorder: { show: false },
+      axisTicks: { show: false },
+      labels: {
+        style: {
+          colors: labelColor,
+          fontSize: '12px'
+        }
+      }
+    },
+    yaxis: {
+      labels: { show: false }
+    },
+    states: {
+      hover: { filter: { type: 'none' } },
+      active: { filter: { type: 'none' } }
+    }
+  };
+
+if (companyBarChartEl) {
+  const companyBarChart = new ApexCharts(companyBarChartEl, companyBarChartConfig);
+  companyBarChart.render();
+}
+
+/* End Company Graphics */
+
+
+  
   // Variable declaration for table
   const dt_invoice_table = document.querySelector('.datatable-invoice');
 

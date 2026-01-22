@@ -177,14 +177,15 @@ document.addEventListener('DOMContentLoaded', function (e) {
         height: 365,
         parentHeightOffset: 0,
         type: 'donut'
-      },
-      labels: ['Incorrect address', 'Weather conditions', 'Federal Holidays', 'Damage during transit'],
-      series: [13, 25, 22, 40],
+      }, labels: ['Ramón Enrique Mijangos', 'Tadeo Fernandez', 'Jorge Gerardo', 'Manuel Mendoza','Álvaro Fernández', 'Ramón Enriques', 'Marcos Ávila', 'Grace Maldonado'],
+      series: [13, 25, 22, 40, 18, 30, 12, 27],
+     
       colors: [
-        chartColors.donut.series1,
-        chartColors.donut.series2,
-        chartColors.donut.series3,
-        chartColors.donut.series4
+        '#1e3799', // azul oscuro
+        '#b71540', // vino
+        '#009432', // verde oscuro
+        '#f79f1f', // naranja
+        '#5758BB'  // morado
       ],
       stroke: {
         width: 0
@@ -211,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
         fontFamily: fontFamily,
         fontWeight: 400,
         labels: {
-          colors: legendColor,
+          colors: '#ffffff',
           useSeriesColors: false
         }
       },
@@ -248,9 +249,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
                 fontSize: '15px',
                 fontFamily: fontFamily,
                 color: legendColor,
-                label: 'AVG. Exceptions',
+                label: 'Tarjetas asignadas',
                 formatter: function (w) {
-                  return '30%';
+                  return '100%';
                 }
               }
             }

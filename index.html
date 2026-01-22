@@ -275,263 +275,85 @@
                   <!-- Content -->
                   <div class="container-xxl flex-grow-1 container-p-y">
                      <div class="row g-6">
-                        <div class="card">
-                           <div class="card-datatable table-responsive pt-0">
-                              <div id="DataTables_Table_0_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
-                                 <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
-                                    <div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto mt-0">
-                                       <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Empresas</h5>
-                                    </div>
-                                    <div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto mt-0">
-                                       <div class="dt-search mt-0 mt-md-6 mb-6">
-                                          <div class="dt-buttons btn-group flex-wrap mb-0">
-                                             <div class="btn-group">
-                                                <button
-                                                   class="btn btn-label-primary dropdown-toggle"
-                                                   type="button"
-                                                   data-bs-toggle="dropdown"
-                                                   aria-expanded="false">
-                                                <i class="icon-base ti tabler-upload icon-xs me-1"></i>
-                                                Exportar
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                   <li>
-                                                      <a class="dropdown-item export-csv" href="#">
-                                                      <i class="icon-base ti tabler-file-text me-2"></i> CSV
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a class="dropdown-item export-excel" href="#">
-                                                      <i class="icon-base ti tabler-file-spreadsheet me-2"></i> Excel
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a class="dropdown-item export-print" href="#">
-                                                      <i class="icon-base ti tabler-printer me-2"></i> Imprimir
-                                                      </a>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                             <button class="btn create-new btn-primary" tabindex="0" type="button"  data-bs-toggle="modal"
-                                                data-bs-target="#addNewAddress">
-                                             <span>
-                                             <span class="d-flex align-items-center gap-2">
-                                             <i class="icon-base ti tabler-plus icon-sm"></i>
-                                             <span class="d-none d-sm-inline-block">Agregar empresa</span>
-                                             </span>
-                                             </span>
-                                             </button> 
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="row mx-0 px-3 my-0 justify-content-between border-bottom">
-                                 </div>
-                                 <div class="justify-content-between dt-layout-table">
-                                    <div class="d-md-flex justify-content-between align-items-center dt-layout-full table-responsive">
-                                       <table  class="table datatables-basic dataTable dtr-column" id="empresasTable" aria-describedby="DataTables_Table_0_info">
-                                          <thead>
-                                             <tr>
-                                                <th>Empresas</th>
-                                                <th>Monto asignado</th>
-                                                <th>Monto gastado</th>
-                                                <th>Tarjetas asignadas</th>
-                                                <th>Tarjetas utilizadas</th>
-                                                <th>Estatus</th>
-                                                <th>Acciones</th>
-                                             </tr>
-                                          </thead>
-                                          <tbody>
-                                             <!-- filas -->
-                                          <tbody>
-                                             <tr>
-                                                <td>Update01</td>
-                                                <td>789789</td>
-                                                <td>756431</td>
-                                                <td>1234</td>
-                                                <td>768</td>
-                                                <td>
-                                                   <span class="badge bg-label-success">Activo</span>
-                                                </td>
-                                                <td>
-                                                   <div class="d-flex align-items-center gap-1">
-                                                      <!-- Ver (ojo) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Eliminar (basura) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Más acciones (3 puntos) -->
-                                                      <div class="dropdown">
-                                                         <button
-                                                            class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect"
-                                                            type="button"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                         <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                         </button>
-                                                         <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td>Update02</td>
-                                                <td>789789</td>
-                                                <td>756431</td>
-                                                <td>1234</td>
-                                                <td>768</td>
-                                                <td>
-                                                   <span class="badge bg-label-secondary">Inactivo</span>
-                                                </td>
-                                                <td>
-                                                   <div class="d-flex align-items-center gap-1">
-                                                      <!-- Ver (ojo) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Eliminar (basura) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Más acciones (3 puntos) -->
-                                                      <div class="dropdown">
-                                                         <button
-                                                            class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect"
-                                                            type="button"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                         <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                         </button>
-                                                         <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td>Update02</td>
-                                                <td>789789</td>
-                                                <td>756431</td>
-                                                <td>1234</td>
-                                                <td>768</td>
-                                                <td>
-                                                   <span class="badge bg-label-warning">Pendiente</span>
-                                                </td>
-                                                <td>
-                                                   <div class="d-flex align-items-center gap-1">
-                                                      <!-- Ver (ojo) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Eliminar (basura) -->
-                                                      <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                      <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                      </span>
-                                                      <!-- Más acciones (3 puntos) -->
-                                                      <div class="dropdown">
-                                                         <button
-                                                            class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect"
-                                                            type="button"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false">
-                                                         <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                         </button>
-                                                         <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                            <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </td>
-                                             </tr>
-                                          </tbody>
-                                          <!-- filas -->
-                                          </tbody>
-                                       </table>
-                                    </div>
-                                 </div>
-                              </div>
+
+
+                        <div class="col-xxl-6 col-12">
+                           <div class="card h-100">
+                             <div class="card-header d-flex align-items-center justify-content-between">
+                               <div class="card-title mb-0">
+                                 <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Cantidad de tarjetas asignadas por usuarios</h5>
+                               </div>
+                             </div>
+                             <div class="card-body">
+                               <div id="deliveryExceptionsChart"></div>
+                             </div>
                            </div>
-                        </div>
+                         </div>
                         <!--/ Projects table -->
+
+
+
+
+
+                        <div class="col-xxl-6 col-12">
+                           <div class="card h-100">
+                             <div class="card-header d-flex justify-content-between">
+                               <div class="card-title mb-0">
+                                 <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Cantidad de tarjetas entregadas por mes</h5>
+                                 <p class="card-subtitle">Tarjetas entregadas</p>
+                               </div>
+                              
+                             </div>
+                             <div class="card-body mt-5 pt-5">
+                              
+                               <div id="reportBarChart"></div>
+                              
+                             </div>
+                           </div>
+                         </div>
+
+
+                         <div class="col-xxl-6 col-12">
+                           <div class="card h-100">
+                             <div class="card-header d-flex justify-content-between">
+                               <div class="card-title mb-0">
+                                 <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Cantidad de tarjetas por empresas</h5>
+                                 <p class="card-subtitle">Top 10</p>
+                               </div>
+                              
+                             </div>
+                             <div class="card-body mt-5 pt-5">
+                              
+                               <div id="companyBarChart"></div>
+                              
+                             </div>
+                           </div>
+                         </div>
+
                      </div>
+
+
+
+                     
+
+
+
                   </div>
+
+
+                
+
+
+
+
+
+
+
                   <!-- / Content -->
                   <!-- Modals -->
                   <!-- Add New Address Modal -->
                   <!-- End/Modals -->
-                  <div class="modal fade" id="addNewAddress" tabindex="-1" aria-hidden="true">
-                     <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
-                        <div class="modal-content">
-                           <div class="modal-body">
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              <div class="text-center mb-6">
-                                 <h4 class="address-title mb-2 text-white">Nueva empresa</h4>
-                                 <p class="address-subtitle text-white">Agrega una nueva empresa</p>
-                              </div>
-                              <form id="addNewAddressForm" class="row g-4" onsubmit="return false">
-                                 <!-- Nombre empresa -->
-                                 <div class="col-12">
-                                    <label class="form-label">Nombre de la empresa</label>
-                                    <input type="text" class="form-control" placeholder="Global Trust" required>
-                                 </div>
-                                 <!-- Montos -->
-                                 <div class="col-md-6">
-                                    <label class="form-label">Monto asignado</label>
-                                    <input type="number" class="form-control" placeholder="0" min="0">
-                                 </div>
-                                 <div class="col-md-6">
-                                    <label class="form-label">Monto gastado</label>
-                                    <input type="number" class="form-control" placeholder="0" min="0">
-                                 </div>
-                                 <!-- Tarjetas asignadas -->
-                                 <div class="col-md-6">
-                                    <label class="form-label">Tarjetas asignadas</label>
-                                    <select class="form-select" multiple>
-                                       <option>Tarjeta 001</option>
-                                       <option>Tarjeta 002</option>
-                                       <option>Tarjeta 003</option>
-                                    </select>
-                                 </div>
-                                 <!-- Tarjetas utilizadas -->
-                                 <div class="col-md-6">
-                                    <label class="form-label">Tarjetas utilizadas</label>
-                                    <select class="form-select" multiple>
-                                       <option>Tarjeta 001</option>
-                                       <option>Tarjeta 002</option>
-                                    </select>
-                                 </div>
-                                 <!-- Estatus -->
-                                 <div class="col-12">
-                                    <label class="form-label">Estatus</label>
-                                    <select class="form-select">
-                                       <option value="activo">Activo</option>
-                                       <option value="inactivo">Inactivo</option>
-                                       <option value="pendiente">Pendiente</option>
-                                    </select>
-                                 </div>
-                                 <!-- Botones -->
-                                 <div class="col-12 text-center mt-4">
-                                    <button type="submit" class="btn btn-primary me-3">
-                                    Guardar
-                                    </button>
-                                    <button type="reset" class="btn btn-label-secondary" data-bs-dismiss="modal">
-                                    Cancelar
-                                    </button>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+                 
                   <!-- Footer -->
                   <footer class="content-footer footer bg-footer-theme">
                      <div class="container-xxl">
@@ -563,7 +385,6 @@
       <script src="assets/vendor/libs/jquery/jquery.js"></script>
       <script src="assets/vendor/libs/popper/popper.js"></script>
       <script src="assets/vendor/js/bootstrap.js"></script>
-      <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
       <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
       <script src="assets/vendor/libs/hammer/hammer.js"></script>
       <script src="assets/vendor/js/menu.js"></script>
@@ -574,14 +395,15 @@
       <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
       <!-- libreías para exportar -->
       <!-- DataTables Buttons -->
-      <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
-      <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
-      <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+     
       <!-- Dependencia para Excel -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
       <!-- Main JS -->
       <script src="assets/js/main.js"></script>
       <!-- Script para la tabla -->
-      <script src="assets/vendor/js/search-tabla.js"></script>
+      
+      <!-- Aquí se modifica los valores de la gráfica -->
+      <script src="assets/js/app-logistics-dashboard.js"></script>
+      <script src="assets/js/app-ecommerce-dashboard.js"></script>
    </body>
 </html>
