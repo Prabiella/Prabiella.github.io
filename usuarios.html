@@ -23,18 +23,24 @@
       <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap" rel="stylesheet" />
       <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
       <!-- Core CSS -->
+     
       <!-- build:css assets/vendor/css/theme.css  -->
       <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
       <link rel="stylesheet" href="assets/vendor/libs/pickr/pickr-themes.css" />
       <link rel="stylesheet" href="assets/vendor/css/core.css" />
       <link rel="stylesheet" href="assets/css/demo.css" />
-      <!-- Vendors CSS -->
+
       <!-- endbuild -->
       <link rel="stylesheet" href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
       <link rel="stylesheet" href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
       <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
       <!-- Page CSS -->
       <link rel="stylesheet" href="assets/vendor/css/pages/fishinter-styles.css">
+    
+
+    <link rel="stylesheet" href="assets/vendor/libs/dropzone/dropzone.css" />
+     
+     
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
       <script src="assets/js/config.js"></script>
@@ -313,15 +319,33 @@
                                                    </li>
                                                 </ul>
                                              </div>
-                                             <button class="btn create-new btn-primary" tabindex="0" type="button"  data-bs-toggle="modal"
-                                                data-bs-target="#addNewUser">
-                                             <span>
-                                             <span class="d-flex align-items-center gap-2">
-                                             <i class="icon-base ti tabler-plus icon-sm"></i>
-                                             <span class="d-none d-sm-inline-block">Agregar Usuario</span>
-                                             </span>
-                                             </span>
-                                             </button> 
+                                             <button class="btn create-new btn-primary" tabindex="0" type="button"
+                                             data-bs-toggle="modal" data-bs-target="#addNewUser">
+                                     
+                                       <span class="d-flex align-items-center gap-2">
+                                         <i class="icon-base ti tabler-plus icon-sm"></i>
+                                         <span class="d-none d-sm-inline-block">Agregar Usuario</span>
+                                       </span>
+                                     
+                                     </button>
+                                     
+                                     
+                                     <button class="btn create-new btn-primary" tabindex="0" type="button"
+                                             data-bs-toggle="modal" data-bs-target="#addNewMaiva">
+                                     
+                                       <span class="d-flex align-items-center gap-2">
+                                         <i class="icon-base ti tabler-user-check icon-sm"></i>
+                                         <span class="d-none d-sm-inline-block">Asignación Masiva</span>
+                                       </span>
+                                     
+                                     </button>
+                                     
+                                     
+                                     
+                                
+                                     
+
+
                                           </div>
                                        </div>
                                     </div>
@@ -462,6 +486,13 @@
                                         
                                     </div>
                                  </div>
+
+
+
+
+
+
+
                               </div>
                            </div>
                         </div>
@@ -470,8 +501,7 @@
                   </div>
                   <!-- / Content -->
                   <!-- Modals -->
-                  <!-- Add New Address Modal -->
-                  <!-- End/Modals -->
+                  <!-- Add New User -->
                   <div class="modal fade" id="addNewUser" tabindex="-1" aria-hidden="true">
                      <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
                         <div class="modal-content">
@@ -554,6 +584,77 @@
                         </div>
                      </div>
                   </div>
+
+                  <!-- Add New Asignación -->
+
+                  <div class="modal fade" id="addNewMaiva" tabindex="-1" aria-hidden="true">
+                     <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
+                       <div class="modal-content">
+                         <div class="modal-body">
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   
+                           <div class="text-center mb-6">
+                             <h4 class="address-title mb-2 text-white">Asignación Masiva de saldo</h4>
+                             <p class="address-subtitle text-white">
+                               Para realizar una asignación masiva, debes cargar un archivo CSV o XLSX
+                             </p>
+                           </div>
+                   
+                           <!-- FORM PRINCIPAL -->
+                           <form id="addNewMaivaForm" class="row g-4" enctype="multipart/form-data">
+
+                              <!-- Empresa -->
+                              <div class="col-12">
+                                <label class="form-label">Selecciona una empresa</label>
+                                <select class="form-select" required>
+                                  <option value="">iMony</option>
+                                  <option value="1">iCard</option>
+                                  <option value="2">ByPass</option>
+                                </select>
+                              </div>
+                            
+                              <!-- Dropzone fake + input real -->
+                              <div class="col-12">
+                                <div class="card">
+                                  <h5 class="card-header">Subir archivo</h5>
+                                  <div class="card-body">
+                            
+                                    <div class="dropzone-wrapper">
+                                      <!-- INPUT REAL -->
+                                    
+                            
+                                      <!-- UI DROPZONE -->
+                                      <div class="dropzone ">
+                                       <input type="file" name="file" class="real-file-input" accept=".csv,.xlsx">
+                                        
+                                    </div>
+                            
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <!-- Botones -->
+                              <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary me-3">
+                                  Asignar
+                                </button>
+                                <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                                  Cancelar
+                                </button>
+                              </div>
+                            
+                            </form>
+                            
+                            
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   
+                   
+
+
+
                   <!-- Footer -->
                   <footer class="content-footer footer bg-footer-theme">
                      <div class="container-xxl">
@@ -579,6 +680,8 @@
             <!-- / Layout page -->
          </div>
       </div>
+
+
       <!-- / Layout wrapper -->
       <!-- Core JS -->
       <!-- build:js assets/vendor/js/theme.js  -->
@@ -594,6 +697,7 @@
       <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
       <script src="assets/vendor/libs/swiper/swiper.js"></script>
       <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+     
       <!-- libreías para exportar -->
       <!-- DataTables Buttons -->
       <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
@@ -605,5 +709,11 @@
       <script src="assets/js/main.js"></script>
       <!-- Script para la tabla -->
       <script src="assets/vendor/js/search-tabla.js"></script>
+  
+
+   
+
+    
+     
    </body>
 </html>
