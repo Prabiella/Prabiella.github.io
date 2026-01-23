@@ -23,554 +23,534 @@
       <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap" rel="stylesheet" />
       <link rel="stylesheet" href="assets/vendor/fonts/iconify-icons.css" />
       <!-- Core CSS -->
-     
       <!-- build:css assets/vendor/css/theme.css  -->
       <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
       <link rel="stylesheet" href="assets/vendor/libs/pickr/pickr-themes.css" />
       <link rel="stylesheet" href="assets/vendor/css/core.css" />
       <link rel="stylesheet" href="assets/css/demo.css" />
-
       <!-- endbuild -->
       <link rel="stylesheet" href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
       <link rel="stylesheet" href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
       <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
       <!-- Page CSS -->
       <link rel="stylesheet" href="assets/vendor/css/pages/fishinter-styles.css">
-    
-
-    <link rel="stylesheet" href="assets/vendor/libs/dropzone/dropzone.css" />
-     
-     
+      <link rel="stylesheet" href="assets/vendor/libs/dropzone/dropzone.css" />
       <!-- Helpers -->
       <script src="assets/vendor/js/helpers.js"></script>
       <script src="assets/js/config.js"></script>
+
    </head>
    <body>
       <!-- Layout wrapper -->
       <div class="layout-wrapper layout-content-navbar">
-         <div class="layout-container">
-            <!-- Menu -->
-            <aside id="layout-menu" class="layout-menu menu-vertical menu">
-               <div class="app-brand demo ">
-                  <a href="index.html" class="app-brand-link">
-                  <span class="app-brand-logo demo">
-                  <span class="text-primary">
-                  <img src="/assets/img/branding/logo_GlobalTrust.svg" alt="Global Trust">
-                  </span>
-                  </span>
+      <div class="layout-container">
+         <!-- Menu -->
+         <aside id="layout-menu" class="layout-menu menu-vertical menu">
+            <div class="app-brand demo ">
+               <a href="index.html" class="app-brand-link">
+               <span class="app-brand-logo demo">
+               <span class="text-primary">
+               <img src="/assets/img/branding/logo_GlobalTrust.svg" alt="Global Trust">
+               </span>
+               </span>
+               </a>
+               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+               <i class="icon-base ti menu-toggle-icon d-none d-xl-block"></i>
+               <i class="icon-base ti tabler-x d-block d-xl-none"></i>
+               </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+               <!-- Dashboards -->
+               <li class="menu-header small">
+                  <span class="menu-header-text">GESTIÓN DE LA PLATAFORMA</span>
+               </li>
+               <li class="menu-item">
+                  <a href="index.html" class="menu-link d-flex align-items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
+                        <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
+                     </svg>
+                     <div>Dashboard</div>
                   </a>
-                  <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-                  <i class="icon-base ti menu-toggle-icon d-none d-xl-block"></i>
-                  <i class="icon-base ti tabler-x d-block d-xl-none"></i>
+               </li>
+               <!-- Usuarios -->
+               <li class="menu-item active">
+                  <a href="javascript:void(0);" class="menu-link d-flex align-items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                        <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                        <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                        <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                        <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                        <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                     </svg>
+                     <div>Usuarios</div>
+                  </a>
+               </li>
+               <!--Reporte de tarjetas -->
+               <li class="menu-item">
+                  <a href="#" class="menu-link d-flex align-items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                     </svg>
+                     <div>Reporte de tarjetas</div>
+                  </a>
+               </li>
+               <!-- Empresas -->
+               <li class="menu-item ">
+                  <a href="empresas.html" class="menu-link  d-flex align-items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-buildings">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 21v-15c0 -1 1 -2 2 -2h5c1 0 2 1 2 2v15" />
+                        <path d="M16 8h2c1 0 2 1 2 2v11" />
+                        <path d="M3 21h18" />
+                        <path d="M10 12v.01" />
+                        <path d="M10 16v.01" />
+                        <path d="M10 8v.01" />
+                        <path d="M7 12v.01" />
+                        <path d="M7 16v.01" />
+                        <path d="M7 8v.01" />
+                        <path d="M17 12v.01" />
+                        <path d="M17 16v.01" />
+                     </svg>
+                     <div>Empresas</div>
+                  </a>
+               </li>
+               <!-- Administradores -->
+               <li class="menu-item">
+                  <a href="javascript:void(0);" class="menu-link menu-toggle d-flex align-items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                     </svg>
+                     <div>Administradores</div>
+                  </a>
+                  <ul class="menu-sub">
+                     <li class="menu-item">
+                        <a href="#" class="menu-link">
+                           <div data-i18n="link 03">link 03</div>
+                        </a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="#" class="menu-link">
+                           <div data-i18n="link 04">link 04</div>
+                        </a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="#" class="menu-link">
+                           <div data-i18n="link 05">link 05</div>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <!-- Gestión de tarjetas -->
+               <li class="menu-header small">
+                  <span class="menu-header-text" >GESTIÓN DE TARJETAS</span>
+               </li>
+               <!-- Tarjetas -->
+               <li class="menu-item">
+                  <a href="javascript:void(0);" class="menu-link menu-toggle d-flex align-items-center gap-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastercard">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M11 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M12 9.765a3 3 0 1 0 0 4.47" />
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                     </svg>
+                     <div data-i18n="Tarjetas">Tarjetas</div>
+                  </a>
+                  <ul class="menu-sub">
+                     <li class="menu-item">
+                        <a href="#" class="menu-link">
+                           <div data-i18n="link 10">link 10</div>
+                        </a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                           <div data-i18n="link 11">link 11</div>
+                        </a>
+                        <ul class="menu-sub">
+                           <li class="menu-item">
+                              <a href="#" class="menu-link">
+                                 <div data-i18n="link 11">link 11a</div>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                           <div data-i18n="Link 12">Link 12</div>
+                        </a>
+                        <ul class="menu-sub">
+                           <li class="menu-item">
+                              <a href="#" class="menu-link">
+                                 <div data-i18n="Link 12a">Link 12a</div>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </aside>
+         <!-- / Menu -->
+         <!-- Layout container -->
+         <div class="layout-page">
+            <!-- Navbar -->
+            <nav
+               class="layout-navbar container-xxl navbar-detached navbar navbar-expand-xl align-items-center bg-navbar-theme"
+               id="layout-navbar">
+               <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
+                  <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
+                  <i class="icon-base ti tabler-menu-2 icon-md"></i>
                   </a>
                </div>
-               <div class="menu-inner-shadow"></div>
-               <ul class="menu-inner py-1">
-                  <!-- Dashboards -->
-                  <li class="menu-header small">
-                     <span class="menu-header-text">GESTIÓN DE LA PLATAFORMA</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="index.html" class="menu-link d-flex align-items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
-                           <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
-                           <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
-                         </svg>
-                        <div>Dashboard</div>
-                     </a>
-                  </li>
-
-
-                     <!-- Usuarios -->
-                     <li class="menu-item active">
-                        <a href="javascript:void(0);" class="menu-link d-flex align-items-center gap-2">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                              <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
-                              <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                              <path d="M17 10h2a2 2 0 0 1 2 2v1" />
-                              <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                              <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
-                           </svg>
-                           <div>Usuarios</div>
+               <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
+                  <ul class="navbar-nav flex-row align-items-center ms-md-auto">
+                     <!-- User -->
+                     <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                        <a
+                           class="nav-link dropdown-toggle hide-arrow p-0"
+                           href="javascript:void(0);"
+                           data-bs-toggle="dropdown">
+                           <div class="avatar avatar-online">
+                              <img src="assets/img/avatars/avatar.jpg" alt class="rounded-circle" />
+                           </div>
                         </a>
-                    
-                     </li>
-
-
-                         <!--Reporte de tarjetas -->
-              
-                  <li class="menu-item">
-                     <a href="#" class="menu-link d-flex align-items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
-                           <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
-                           <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
-                         </svg>
-                        <div>Reporte de tarjetas</div>
-                     </a>
-                  </li>
-
-
-
-
-
-
-                  <!-- Empresas -->
-                  <li class="menu-item ">
-                     <a href="empresas.html" class="menu-link  d-flex align-items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-buildings">
-                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                           <path d="M4 21v-15c0 -1 1 -2 2 -2h5c1 0 2 1 2 2v15" />
-                           <path d="M16 8h2c1 0 2 1 2 2v11" />
-                           <path d="M3 21h18" />
-                           <path d="M10 12v.01" />
-                           <path d="M10 16v.01" />
-                           <path d="M10 8v.01" />
-                           <path d="M7 12v.01" />
-                           <path d="M7 16v.01" />
-                           <path d="M7 8v.01" />
-                           <path d="M17 12v.01" />
-                           <path d="M17 16v.01" />
-                        </svg>
-                        <div>Empresas</div>
-                     </a>
-                   
-                  </li>
-                  <!-- Administradores -->
-                  <li class="menu-item">
-                     <a href="javascript:void(0);" class="menu-link menu-toggle d-flex align-items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users">
-                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                           <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                           <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                           <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                           <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                        </svg>
-                        <div>Administradores</div>
-                     </a>
-                     <ul class="menu-sub">
-                        <li class="menu-item">
-                           <a href="#" class="menu-link">
-                              <div data-i18n="link 03">link 03</div>
-                           </a>
-                        </li>
-                        <li class="menu-item">
-                           <a href="#" class="menu-link">
-                              <div data-i18n="link 04">link 04</div>
-                           </a>
-                        </li>
-                        <li class="menu-item">
-                           <a href="#" class="menu-link">
-                              <div data-i18n="link 05">link 05</div>
-                           </a>
-                        </li>
-                     </ul>
-                  </li>
-               
-                  <!-- Gestión de tarjetas -->
-                  <li class="menu-header small">
-                     <span class="menu-header-text" >GESTIÓN DE TARJETAS</span>
-                  </li>
-                  <!-- Tarjetas -->
-                  <li class="menu-item">
-                     <a href="javascript:void(0);" class="menu-link menu-toggle d-flex align-items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastercard">
-                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                           <path d="M11 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                           <path d="M12 9.765a3 3 0 1 0 0 4.47" />
-                           <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-                        </svg>
-                        <div data-i18n="Tarjetas">Tarjetas</div>
-                     </a>
-                     <ul class="menu-sub">
-                        <li class="menu-item">
-                           <a href="#" class="menu-link">
-                              <div data-i18n="link 10">link 10</div>
-                           </a>
-                        </li>
-                        <li class="menu-item">
-                           <a href="javascript:void(0);" class="menu-link menu-toggle">
-                              <div data-i18n="link 11">link 11</div>
-                           </a>
-                           <ul class="menu-sub">
-                              <li class="menu-item">
-                                 <a href="#" class="menu-link">
-                                    <div data-i18n="link 11">link 11a</div>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                           <li>
+                              <a class="dropdown-item mt-0" href="pages-account-settings-account.html">
+                                 <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 me-2">
+                                       <div class="avatar avatar-online">
+                                          <img src="assets/img/avatars/avatar.jpg" alt class="rounded-circle" />
+                                       </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                       <h6 class="mb-0 text-data-user">Francisco R.</h6>
+                                       <small class="text-body-secondary">correo@mail.com.mx</small> <br/>
+                                       <small class="text-body-secondary">Admin</small>
+                                    </div>
+                                 </div>
+                              </a>
+                           </li>
+                           <li>
+                              <div class="dropdown-divider my-1 mx-n2"></div>
+                           </li>
+                           <li>
+                              <div class="d-grid px-2 pt-2 pb-1">
+                                 <a class="btn btn-sm btn-primary d-flex" href="login.html" target="_blank">
+                                 <small class="align-middle">Cerrar sesión</small>
+                                 <i class="icon-base ti tabler-logout ms-2 icon-14px"></i>
                                  </a>
-                              </li>
-                           </ul>
-                        </li>
-                        <li class="menu-item">
-                           <a href="javascript:void(0);" class="menu-link menu-toggle">
-                              <div data-i18n="Link 12">Link 12</div>
-                           </a>
-                           <ul class="menu-sub">
-                              <li class="menu-item">
-                                 <a href="#" class="menu-link">
-                                    <div data-i18n="Link 12a">Link 12a</div>
-                                 </a>
-                              </li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-            </aside>
-           
-            <!-- / Menu -->
-            <!-- Layout container -->
-            <div class="layout-page">
-               <!-- Navbar -->
-               <nav
-                  class="layout-navbar container-xxl navbar-detached navbar navbar-expand-xl align-items-center bg-navbar-theme"
-                  id="layout-navbar">
-                  <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
-                     <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
-                     <i class="icon-base ti tabler-menu-2 icon-md"></i>
-                     </a>
-                  </div>
-                  <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
-                     <ul class="navbar-nav flex-row align-items-center ms-md-auto">
-                        <!-- User -->
-                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                           <a
-                              class="nav-link dropdown-toggle hide-arrow p-0"
-                              href="javascript:void(0);"
-                              data-bs-toggle="dropdown">
-                              <div class="avatar avatar-online">
-                                 <img src="assets/img/avatars/avatar.jpg" alt class="rounded-circle" />
                               </div>
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu-end">
-                              <li>
-                                 <a class="dropdown-item mt-0" href="pages-account-settings-account.html">
-                                    <div class="d-flex align-items-center">
-                                       <div class="flex-shrink-0 me-2">
-                                          <div class="avatar avatar-online">
-                                             <img src="assets/img/avatars/avatar.jpg" alt class="rounded-circle" />
-                                          </div>
-                                       </div>
-                                       <div class="flex-grow-1">
-                                          <h6 class="mb-0 text-data-user">Francisco R.</h6>
-                                          <small class="text-body-secondary">correo@mail.com.mx</small> <br/>
-                                          <small class="text-body-secondary">Admin</small>
-                                       </div>
-                                    </div>
-                                 </a>
-                              </li>
-                              <li>
-                                 <div class="dropdown-divider my-1 mx-n2"></div>
-                              </li>
-                              <li>
-                                 <div class="d-grid px-2 pt-2 pb-1">
-                                    <a class="btn btn-sm btn-primary d-flex" href="login.html" target="_blank">
-                                    <small class="align-middle">Cerrar sesión</small>
-                                    <i class="icon-base ti tabler-logout ms-2 icon-14px"></i>
-                                    </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <!--/ User -->
+                  </ul>
+               </div>
+            </nav>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+               <!-- Content Usuarios -->
+               <div class="container-xxl flex-grow-1 container-p-y">
+                  <div class="row g-6">
+                     <div class="card">
+                        <div class="card-datatable table-responsive pt-0">
+                           <div id="DataTables_Table_0_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                              <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
+                                 <div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto mt-0">
+                                    <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Usuarios</h5>
                                  </div>
-                              </li>
-                           </ul>
-                        </li>
-                        <!--/ User -->
-                     </ul>
-                  </div>
-               </nav>
-               <!-- / Navbar -->
-               <!-- Content wrapper -->
-               <div class="content-wrapper">
-                  <!-- Content Usuarios -->
-                  <div class="container-xxl flex-grow-1 container-p-y">
-                     <div class="row g-6">
-                        <div class="card">
-                           <div class="card-datatable table-responsive pt-0">
-                              <div id="DataTables_Table_0_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
-                                 <div class="row card-header flex-column flex-md-row border-bottom mx-0 px-3">
-                                    <div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto mt-0">
-                                       <h5 class="card-title mb-0 text-md-start text-center pb-md-0 pb-6">Usuarios</h5>
-                                    </div>
-                                    <div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto mt-0">
-                                       <div class="dt-search mt-0 mt-md-6 mb-6">
-                                          <div class="dt-buttons btn-group flex-wrap mb-0">
-                                             <div class="btn-group">
-                                                <button
-                                                   class="btn btn-label-primary dropdown-toggle"
-                                                   type="button"
-                                                   data-bs-toggle="dropdown"
-                                                   aria-expanded="false">
-                                                <i class="icon-base ti tabler-upload icon-xs me-1"></i>
-                                                Exportar
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                   <li>
-                                                      <a class="dropdown-item export-csv" href="#">
-                                                      <i class="icon-base ti tabler-file-text me-2"></i> CSV
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a class="dropdown-item export-excel" href="#">
-                                                      <i class="icon-base ti tabler-file-spreadsheet me-2"></i> Excel
-                                                      </a>
-                                                   </li>
-                                                   <li>
-                                                      <a class="dropdown-item export-print" href="#">
-                                                      <i class="icon-base ti tabler-printer me-2"></i> Imprimir
-                                                      </a>
-                                                   </li>
-                                                </ul>
-                                             </div>
-                                             <button class="btn create-new btn-primary" tabindex="0" type="button"
+                                 <div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto mt-0">
+                                    <div class="dt-search mt-0 mt-md-6 mb-6">
+                                       <div class="dt-buttons btn-group flex-wrap mb-0">
+                                          <div class="btn-group">
+                                             <button
+                                                class="btn btn-label-primary dropdown-toggle"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                             <i class="icon-base ti tabler-upload icon-xs me-1"></i>
+                                             Exportar
+                                             </button>
+                                             <ul class="dropdown-menu">
+                                                <li>
+                                                   <a class="dropdown-item export-csv" href="#">
+                                                   <i class="icon-base ti tabler-file-text me-2"></i> CSV
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a class="dropdown-item export-excel" href="#">
+                                                   <i class="icon-base ti tabler-file-spreadsheet me-2"></i> Excel
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a class="dropdown-item export-print" href="#">
+                                                   <i class="icon-base ti tabler-printer me-2"></i> Imprimir
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                          <button class="btn create-new btn-primary" tabindex="0" type="button"
                                              data-bs-toggle="modal" data-bs-target="#addNewUser">
-                                     
-                                       <span class="d-flex align-items-center gap-2">
-                                         <i class="icon-base ti tabler-plus icon-sm"></i>
-                                         <span class="d-none d-sm-inline-block">Agregar Usuario</span>
-                                       </span>
-                                     
-                                     </button>
-                                     
-                                     
-                                     <button class="btn create-new btn-primary" tabindex="0" type="button"
+                                          <span class="d-flex align-items-center gap-2">
+                                          <i class="icon-base ti tabler-plus icon-sm"></i>
+                                          <span class="d-none d-sm-inline-block">Agregar Usuario</span>
+                                          </span>
+                                          </button>
+                                          <button class="btn create-new btn-primary" tabindex="0" type="button"
                                              data-bs-toggle="modal" data-bs-target="#addNewMaiva">
-                                     
-                                       <span class="d-flex align-items-center gap-2">
-                                         <i class="icon-base ti tabler-user-check icon-sm"></i>
-                                         <span class="d-none d-sm-inline-block">Asignación Masiva</span>
-                                       </span>
-                                     
-                                     </button>
-                                     
-                                     
-                                     
-                                
-                                     
-
-
-                                          </div>
+                                          <span class="d-flex align-items-center gap-2">
+                                          <i class="icon-base ti tabler-user-check icon-sm"></i>
+                                          <span class="d-none d-sm-inline-block">Asignación Masiva</span>
+                                          </span>
+                                          </button>
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="row mx-0 px-3 my-0 justify-content-between border-bottom">
-                                 </div>
-                                 <div class="justify-content-between dt-layout-table">
-                                    <div class="d-md-flex justify-content-between align-items-center dt-layout-full table-responsive">
-                                      
-
-                                       <table class="table datatables-basic dataTable dtr-column" id="empresasTable" aria-describedby="DataTables_Table_0_info">
-                                          <thead>
-                                            <tr>
-                                              <th>Nombre</th>
-                                              <th>Apellido paterno</th>
-                                              <th>Apellido materno</th>
-                                              <th>Email</th>
-                                              <th>Teléfono</th>
-                                              <th>Rol</th>
-                                              <th>Empresa</th>
-                                              <th>Estatus</th>
-                                              <th>Acciones</th>
-                                             
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <!-- filas -->
-                                            <tbody>
-                                             <tr>
-                                               <td>Carlos</td>
-                                               <td>Pérez</td>
-                                               <td>Sánchez</td>
-                                               <td>carlos.perez@globex.com</td>
-                                               <td>555-123-4567</td>
-                                               <td>Soporte</td>
-                                               <td>Globex</td>
-                                               <td>
-                                                 <span class="badge bg-label-warning">Suspendido</span>
-                                               </td>
-                                               <td>
-                                                 <div class="d-flex align-items-center gap-1">
-                                                   <!-- Ver (ojo) -->
-                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                     <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                   </span>
-                                                   <!-- Eliminar (basura) -->
-                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                     <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                   </span>
-                                                   <!-- Más acciones (3 puntos) -->
-                                                   <div class="dropdown">
-                                                     <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                       <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                     </button>
-                                                     <div class="dropdown-menu dropdown-menu-end">
-                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                     </div>
-                                                   </div>
-                                                 </div>
-                                               </td>
-                                             </tr>
-                                           
-                                             <tr>
-                                               <td>Ana</td>
-                                               <td>López</td>
-                                               <td>Martínez</td>
-                                               <td>ana.lopez@globex.com</td>
-                                               <td>555-987-6543</td>
-                                               <td>Soporte</td>
-                                               <td>Globex</td>
-                                               <td>
-                                                 <span class="badge bg-label-secondary">Inactivo</span>
-                                               </td>
-                                               <td>
-                                                 <div class="d-flex align-items-center gap-1">
-                                                   <!-- Ver (ojo) -->
-                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                     <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                   </span>
-                                                   <!-- Eliminar (basura) -->
-                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                     <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                   </span>
-                                                   <!-- Más acciones (3 puntos) -->
-                                                   <div class="dropdown">
-                                                     <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                       <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                     </button>
-                                                     <div class="dropdown-menu dropdown-menu-end">
-                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                     </div>
-                                                   </div>
-                                                 </div>
-                                               </td>
-                                             </tr>
-                                           
-                                             <tr>
-                                               <td>Luis</td>
-                                               <td>Ramírez</td>
-                                               <td>Torres</td>
-                                               <td>luis.ramirez@globex.com</td>
-                                               <td>555-456-7890</td>
-                                               <td>Soporte</td>
-                                               <td>Globex</td>
-                                               <td>
-                                                 <span class="badge bg-label-success">Activo</span>
-                                               </td>
-                                               <td>
-                                                 <div class="d-flex align-items-center gap-1">
-                                                   <!-- Ver (ojo) -->
-                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                     <i class="icon-base ti tabler-eye icon-22px cursor-pointer"></i>
-                                                   </span>
-                                                   <!-- Eliminar (basura) -->
-                                                   <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
-                                                     <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
-                                                   </span>
-                                                   <!-- Más acciones (3 puntos) -->
-                                                   <div class="dropdown">
-                                                     <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                       <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
-                                                     </button>
-                                                     <div class="dropdown-menu dropdown-menu-end">
-                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Editar</a>
-                                                       <a class="dropdown-item waves-effect" href="javascript:void(0)">Desactivar</a>
-                                                     </div>
-                                                   </div>
-                                                 </div>
-                                               </td>
-                                             </tr>
-                                           </tbody>
-                                           
+                              </div>
+                              <div class="row mx-0 px-3 my-0 justify-content-between border-bottom">
+                              </div>
+                              <div class="justify-content-between dt-layout-table">
+                                 <div class="d-md-flex justify-content-between align-items-center dt-layout-full table-responsive">
+                                    <table class="table datatables-basic dataTable dtr-column" id="empresasTable" aria-describedby="DataTables_Table_0_info">
+                                       <thead>
+                                          <tr>
+                                             <th>Nombre</th>
+                                             <th>Apellido paterno</th>
+                                             <th>Apellido materno</th>
+                                             <th>Email</th>
+                                             <th>Teléfono</th>
+                                             <th>Rol</th>
+                                             <th>Empresa</th>
+                                             <th>Estatus</th>
+                                             <th>Acciones</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
                                           <!-- filas -->
-                                          </tbody>
-                                        </table>
-                                        
-                                    </div>
+                                       <tbody>
+                                          <tr>
+                                             <td>Carlos</td>
+                                             <td>Pérez</td>
+                                             <td>Sánchez</td>
+                                             <td>carlos.perez@globex.com</td>
+                                             <td>555-123-4567</td>
+                                             <td>Usuario</td>
+                                             <td>Globex</td>
+                                             <td>
+                                                <span class="badge bg-label-warning">Suspendido</span>
+                                             </td>
+                                             <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                   <!-- Más acciones (3 puntos) -->
+                                                   <div class="dropdown">
+                                                      <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
+                                                      </button>
+                                                      <div class="dropdown-menu dropdown-menu-end">
+                                                         <a class="dropdown-item waves-effect" href="javascript:void(0)"> 
+                                                         <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                         <i class="icon-base ti tabler-edit icon-22px cursor-pointer"></i>
+                                                         </span>
+                                                         Editar
+                                                         </a>
+                                                         <a class="dropdown-item waves-effect" href="javascript:void(0)"> 
+                                                         <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                         <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
+                                                         </span>
+                                                         Borrar
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Tarjeta -->
+                                                   <button 
+                                                      class="btn btn-sm btn-primary d-flex align-items-center gap-1 waves-effect"
+                                                      data-bs-toggle="modal"
+                                                      data-bs-target="#addCardUser">
+                                                   <i class="icon-base ti tabler-credit-card icon-18px"></i>
+                                                   Tarjeta
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>Ana</td>
+                                             <td>López</td>
+                                             <td>Martínez</td>
+                                             <td>ana.lopez@globex.com</td>
+                                             <td>555-987-6543</td>
+                                             <td>Usuario</td>
+                                             <td>Globex</td>
+                                             <td>
+                                                <span class="badge bg-label-secondary">Inactivo</span>
+                                             </td>
+                                             <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                   <!-- Más acciones (3 puntos) -->
+                                                   <div class="dropdown">
+                                                      <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
+                                                      </button>
+                                                      <div class="dropdown-menu dropdown-menu-end">
+                                                         <a class="dropdown-item waves-effect" href="javascript:void(0)"> 
+                                                         <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                         <i class="icon-base ti tabler-edit icon-22px cursor-pointer"></i>
+                                                         </span>
+                                                         Editar
+                                                         </a>
+                                                         <a class="dropdown-item waves-effect" href="javascript:void(0)"> 
+                                                         <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                         <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
+                                                         </span>
+                                                         Borrar
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Tarjeta -->
+                                                   <button 
+                                                      class="btn btn-sm btn-primary d-flex align-items-center gap-1 waves-effect"
+                                                      data-bs-toggle="modal"
+                                                      data-bs-target="#addCardUser">
+                                                   <i class="icon-base ti tabler-credit-card icon-18px"></i>
+                                                   Tarjeta
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>Luis</td>
+                                             <td>Ramírez</td>
+                                             <td>Torres</td>
+                                             <td>luis.ramirez@globex.com</td>
+                                             <td>555-456-7890</td>
+                                             <td>Usuario</td>
+                                             <td>Globex</td>
+                                             <td>
+                                                <span class="badge bg-label-success">Activo</span>
+                                             </td>
+                                             <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                   <!-- Más acciones (3 puntos) -->
+                                                   <div class="dropdown">
+                                                      <button class="btn btn-icon btn-text-secondary rounded-pill p-0 waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      <i class="icon-base ti tabler-dots-vertical icon-22px"></i>
+                                                      </button>
+                                                      <div class="dropdown-menu dropdown-menu-end">
+                                                         <a class="dropdown-item waves-effect" href="javascript:void(0)"> 
+                                                         <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                         <i class="icon-base ti tabler-edit icon-22px cursor-pointer"></i>
+                                                         </span>
+                                                         Editar
+                                                         </a>
+                                                         <a class="dropdown-item waves-effect" href="javascript:void(0)"> 
+                                                         <span class="btn btn-icon btn-text-secondary rounded-pill waves-effect">
+                                                         <i class="icon-base ti tabler-trash icon-22px cursor-pointer"></i>
+                                                         </span>
+                                                         Borrar
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Tarjeta -->
+                                                   <button 
+                                                      class="btn btn-sm btn-primary d-flex align-items-center gap-1 waves-effect"
+                                                      data-bs-toggle="modal"
+                                                      data-bs-target="#addCardUser">
+                                                   <i class="icon-base ti tabler-credit-card icon-18px"></i>
+                                                   Tarjeta
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                       <!-- filas -->
+                                       </tbody>
+                                    </table>
                                  </div>
-
-
-
-
-
-
-
                               </div>
                            </div>
                         </div>
-                        <!--/ Projects table -->
                      </div>
+                     <!--/ Projects table -->
                   </div>
-                  <!-- / Content -->
-                  <!-- Modals -->
-                  <!-- Add New User -->
-                  <div class="modal fade" id="addNewUser" tabindex="-1" aria-hidden="true">
-                     <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
-                        <div class="modal-content">
-                           <div class="modal-body">
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              <div class="text-center mb-6">
-                                 <h4 class="address-title mb-2 text-white">Nuevo Usuario</h4>
-                                 <p class="address-subtitle text-white">Agrega los datos del usuario</p>
-                              </div>
-                              <form id="addNewAddressForm" class="row g-4" onsubmit="return false">
-                                 <!-- Nombre usuario -->
-                                 <div class="col-12">
-                                    <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" placeholder="Nombre" required>
-                                 </div>
-                                  <!-- Apellido Paterno -->
-                                  <div class="col-12 col-md-6">
-                                    <label class="form-label">Apellido Paterno</label>
-                                    <input type="text" class="form-control" placeholder="Apellido Paterno" required>
-                                 </div>
-                                   <!-- Apellido Materno -->
-                                   <div class="col-12 col-md-6">
-                                    <label class="form-label">Apellido Materno</label>
-                                    <input type="text" class="form-control" placeholder="Apellido Materno" required>
-                                 </div>
+               </div>
+               <!-- / Content -->
+               <!-- Modals -->
+               <!-- Add New User -->
+               <!-- Modal con Form Tabs -->
+               <!-- Add Trajetas Usuarios -->
+               <div class="modal fade" id="addCardUser" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           <div class="text-center mb-1">
+                              <h4 class="address-title mb-5 text-white">Gestión de tarjetas</h4>
+                             
+                           </div>
+                           <!-- NAV TABS -->
+                          
 
-                                 <!-- Correo electrónico -->
-                                 <div class="col-12 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                                    <input
-                                    type="email"
-                                    class="form-control"
-                                    id="exampleFormControlInput1"
-                                    placeholder="nombre@dominio.com" />
-                                 </div>
-
-                                    <!-- Teléfono -->
-                                    <div class="col-12 col-md-6">
-                                       <label class="form-label">Teléfono</label>
-                                       <input type="number" class="form-control" placeholder="555-555-555" required>
-                                    </div>
-
-                                     <!-- Rol -->
-                                 <div class="col-12 col-md-6">
-                                    <label class="form-label">Rol</label>
-                                    <select class="form-select">
-                                       <option value="activo">Soporte</option>
-                                       <option value="inactivo">Admin</option>
-                                       <option value="pendiente">Superadmin</option>
-                                    </select>
-                                 </div>
-
-                                        <!-- Rol -->
-                                        <div class="col-12 col-md-6">
-                                          <label class="form-label">Estatus</label>
-                                          <select class="form-select">
-                                             <option value="activo">Activo</option>
-                                             <option value="inactivo">Inactivo</option>
-                                             <option value="pendiente">Pendiente</option>
-                                          </select>
+                           <ul class="nav nav-tabs mb-4" role="tablist">
+                              <li class="nav-item gestion-card">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-01">
+                                  Tarjetas asignadas
+                                </button>
+                              </li>
+                              <li class="nav-item gestion-card">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-02">
+                                  Historial de transacciones
+                                </button>
+                              </li>
+                              <li class="nav-item gestion-card">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-03">
+                                  Gestión de saldo
+                                </button>
+                              </li>
+                            </ul>
+                            
+                           <!-- TAB CONTENIDO -->
+                           <div class="tab-content">
+                              <!-- TARJETAS ASIGNADAS -->
+                              <div class="tab-pane fade show active" id="tab-01">
+                                 <div class="row g-3">
+                                    <div class="col-md-12">
+                                       <div class="card">
+                                          <h5 class="card-header">Agregar Tarjeta Física</h5>
+                                          <div class="card-body">
+                                             <div class="dropzone-wrapper">
+                                                <div class="dropzone ">
+                                                   <input type="file" name="file" class="real-file-input" accept=".csv,.xlsx">
+                                                </div>
+                                             </div>
+                                          </div>
                                        </div>
-      
-                                         <!-- Empresa -->
-                                   <div class="col-12">
-                                    <label class="form-label">Empresa</label>
-                                    <input type="text" class="form-control" placeholder="Nombre de la empresa" required>
+                                      
+                                    </div>
+                                   
+                                 
+                                    <div class="col-md-12">
+                                       <div class="card">
+                                          <h5 class="card-header">Agregar Tarjeta Digital</h5>
+                                          <div class="card-body">
+                                             <div class="dropzone-wrapper">
+                                                <div class="dropzone ">
+                                                   <input type="file" name="file" class="real-file-input" accept=".csv,.xlsx">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                      
+                                    </div>
                                  </div>
-
-                                 <!-- Botones -->
                                  <div class="col-12 text-center mt-4">
                                     <button type="submit" class="btn btn-primary me-3">
                                     Guardar
@@ -579,82 +559,301 @@
                                     Cancelar
                                     </button>
                                  </div>
-                              </form>
+                              </div>
+                              <!-- HISTORIAL DE TRANSACCIONES -->
+                              <div class="tab-pane fade" id="tab-02">
+                                 <div class="row g-3">
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="card-filters">Filtros de tarjeta</label>
+                                     <select id="card-filters" class="select2 form-select">
+                                       <option value="">Selecciona una opción</option>
+                                       <option value="filter01">Filtro 1</option>
+                                       <option value="filter02">Filtro 2</option>
+                                       <option value="filter03">Filtro 3</option>
+                                       <option value="filter04">Filtro 4</option>
+                                       <option value="filter05">Filtro 5</option>
+                                     </select>
+                                   </div>
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="card-name">Tarjeta específica</label>
+                                     <input type="text" id="card-name" class="form-control" />
+                                   </div>
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="start-date">Desde</label>
+                                     <input type="date" id="start-date" class="form-control" />
+                                   </div>
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="end-date">Hasta</label>
+                                     <input type="date" id="end-date" class="form-control" />
+                                   </div>
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="transaction-type">Tipo de transacción</label>
+                                     <select id="transaction-type" class="select2 form-select">
+                                       <option value="">Selecciona una opción</option>
+                                       <option value="abono">Abono</option>
+                                       <option value="cargo">Cargo</option>
+                                       <option value="reversa">Reversa</option>
+                                     </select>
+                                   </div>
+                               
+                                           <!-- Botones -->
+                                   <div class="col-12 d-flex justify-content-end gap-2 mt-3">
+                                     <button type="button" class="btn btn-label-secondary" id="btnClearFilters">
+                                       <i class="icon-base ti tabler-refresh me-1"></i>
+                                       Limpiar filtros
+                                     </button>
+                               
+                                     <button type="button" class="btn btn-primary" id="btnExportExcel">
+                                       <i class="icon-base ti tabler-file-spreadsheet me-1"></i>
+                                       Exportar Excel
+                                     </button>
+                                   </div>
+                               
+                                 </div>
+                               </div>
+                               
+                              <!-- GESTION DE USUARIOS -->
+                              <div class="tab-pane fade" id="tab-03">
+                                 <div class="row g-3">
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="type-cards">Tipo de tarjetas</label>
+                                     <select id="type-cards" class="select2 form-select">
+                                       <option value="">Selecciona una opción</option>
+                                       <option value="fisica">Tarjeta física</option>
+                                       <option value="digital">Tarjeta digital</option>
+                                     </select>
+                                   </div>
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="type-operation">Tipo de operación</label>
+                                     <select id="type-operation" class="select2 form-select">
+                                       <option value="">Selecciona una opción</option>
+                                       <option value="asignar">Asignar Monto</option>
+                                       <option value="cambiar">Cambiar Monto</option>
+                                     </select>
+                                   </div>
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label" for="select-card">Seleccionar tarjeta</label>
+                                     <select id="select-card" class="select2 form-select">
+                                       <option value="">Selecciona una opción</option>
+                                       <option value="123">VISA *****123</option>
+                                       <option value="989">VISA *****989</option>
+                                     </select>
+                                   </div>
+                               
+                                   <div class="col-md-6">
+                                     <label class="form-label">Monto</label>
+                                     <input type="number" class="form-control" placeholder="$0.00">
+                                   </div>
+                               
+                                   <!-- TEXTAREA -->
+                                   <div class="col-md-12">
+                                     <label class="form-label">Motivo de la operación</label>
+                                     <textarea class="form-control" rows="3" placeholder="Describe el motivo..."></textarea>
+                                   </div>
+                               
+                                   <!-- BOTÓN -->
+                                   <div class="col-12 d-flex justify-content-end mt-3">
+                                     <button class="btn btn-primary">
+                                       <i class="icon-base ti tabler-currency-dollar me-1"></i>
+                                       Asignar monto
+                                     </button>
+                                   </div>
+                               
+                                   <!-- HR -->
+                                   <div class="col-12">
+                                     <hr>
+                                   </div>
+                               
+                                   <!-- TÍTULO -->
+                                   <div class="col-12">
+                                     <h5 class="mb-3 text-white">Historial de comprobantes</h5>
+                                   </div>
+                               
+                                   <!-- TABLA -->
+                                   <div class="col-12">
+                                    <div class="table-responsive" style="max-height: 160px; overflow-y: auto;">
+                                      <table class="table table-striped mb-0">
+                                        <thead class="sticky-top bg-body">
+                                          <tr>
+                                            <th>Fecha</th>
+                                            <th>Tarjeta</th>
+                                            <th>Operación</th>
+                                            <th>Monto</th>
+                                            <th>Motivo</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>2026-01-10</td>
+                                            <td>VISA *****123</td>
+                                            <td>Asignar</td>
+                                            <td>$1,500.00</td>
+                                            <td>Recarga mensual</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2026-01-15</td>
+                                            <td>VISA *****989</td>
+                                            <td>Cambiar</td>
+                                            <td>$800.00</td>
+                                            <td>Ajuste de saldo</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2026-01-20</td>
+                                            <td>VISA *****123</td>
+                                            <td>Asignar</td>
+                                            <td>$2,000.00</td>
+                                            <td>Bono especial</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                  
+                               
+                                 </div>
+                               </div>
+                               
                            </div>
                         </div>
                      </div>
                   </div>
-
-                  <!-- Add New Asignación -->
-
-                  <div class="modal fade" id="addNewMaiva" tabindex="-1" aria-hidden="true">
-                     <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
-                       <div class="modal-content">
-                         <div class="modal-body">
+               </div>
+               <!-- Add New User -->
+               <div class="modal fade" id="addNewUser" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
+                     <div class="modal-content">
+                        <div class="modal-body">
                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                   
                            <div class="text-center mb-6">
-                             <h4 class="address-title mb-2 text-white">Asignación Masiva de saldo</h4>
-                             <p class="address-subtitle text-white">
-                               Para realizar una asignación masiva, debes cargar un archivo CSV o XLSX
-                             </p>
+                              <h4 class="address-title mb-2 text-white">Nuevo Usuario</h4>
+                              <p class="address-subtitle text-white">Agrega los datos del usuario</p>
                            </div>
-                   
-                           <!-- FORM PRINCIPAL -->
-                           <form id="addNewMaivaForm" class="row g-4" enctype="multipart/form-data">
-
+                           <form id="addNewAddressForm" class="row g-4" onsubmit="return false">
+                              <!-- Nombre usuario -->
+                              <div class="col-12">
+                                 <label class="form-label">Nombre</label>
+                                 <input type="text" class="form-control" placeholder="Nombre" required>
+                              </div>
+                              <!-- Apellido Paterno -->
+                              <div class="col-12 col-md-6">
+                                 <label class="form-label">Apellido Paterno</label>
+                                 <input type="text" class="form-control" placeholder="Apellido Paterno" required>
+                              </div>
+                              <!-- Apellido Materno -->
+                              <div class="col-12 col-md-6">
+                                 <label class="form-label">Apellido Materno</label>
+                                 <input type="text" class="form-control" placeholder="Apellido Materno" required>
+                              </div>
+                              <!-- Correo electrónico -->
+                              <div class="col-12 col-md-6">
+                                 <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                                 <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleFormControlInput1"
+                                    placeholder="nombre@dominio.com" />
+                              </div>
+                              <!-- Teléfono -->
+                              <div class="col-12 col-md-6">
+                                 <label class="form-label">Teléfono</label>
+                                 <input type="number" class="form-control" placeholder="555-555-555" required>
+                              </div>
+                              <!-- Rol -->
+                              <div class="col-12 col-md-6">
+                                 <label class="form-label">Rol</label>
+                                 <select class="form-select">
+                                    <option value="activo">Soporte</option>
+                                    <option value="inactivo">Admin</option>
+                                    <option value="pendiente">Superadmin</option>
+                                 </select>
+                              </div>
+                              <!-- Rol -->
+                              <div class="col-12 col-md-6">
+                                 <label class="form-label">Estatus</label>
+                                 <select class="form-select">
+                                    <option value="activo">Activo</option>
+                                    <option value="inactivo">Inactivo</option>
+                                    <option value="pendiente">Pendiente</option>
+                                 </select>
+                              </div>
                               <!-- Empresa -->
                               <div class="col-12">
-                                <label class="form-label">Selecciona una empresa</label>
-                                <select class="form-select" required>
-                                  <option value="">iMony</option>
-                                  <option value="1">iCard</option>
-                                  <option value="2">ByPass</option>
-                                </select>
+                                 <label class="form-label">Empresa</label>
+                                 <input type="text" class="form-control" placeholder="Nombre de la empresa" required>
                               </div>
-                            
-                              <!-- Dropzone fake + input real -->
-                              <div class="col-12">
-                                <div class="card">
-                                  <h5 class="card-header">Subir archivo</h5>
-                                  <div class="card-body">
-                            
-                                    <div class="dropzone-wrapper">
-                                      <!-- INPUT REAL -->
-                                    
-                            
-                                      <!-- UI DROPZONE -->
-                                      <div class="dropzone ">
-                                       <input type="file" name="file" class="real-file-input" accept=".csv,.xlsx">
-                                        
-                                    </div>
-                            
-                                  </div>
-                                </div>
-                              </div>
-                            
                               <!-- Botones -->
                               <div class="col-12 text-center mt-4">
-                                <button type="submit" class="btn btn-primary me-3">
-                                  Asignar
-                                </button>
-                                <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
-                                  Cancelar
-                                </button>
+                                 <button type="submit" class="btn btn-primary me-3">
+                                 Guardar
+                                 </button>
+                                 <button type="reset" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                                 Cancelar
+                                 </button>
                               </div>
-                            
-                            </form>
-                            
-                            
-                         </div>
-                       </div>
+                           </form>
+                        </div>
                      </div>
-                   </div>
-                   
-                   
-
-
-
+                  </div>
+               </div>
+               <!-- Add New Asignación -->
+               <div class="modal fade" id="addNewMaiva" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           <div class="text-center mb-6">
+                              <h4 class="address-title mb-2 text-white">Asignación Masiva de saldo</h4>
+                              <p class="address-subtitle text-white">
+                                 Para realizar una asignación masiva, debes cargar un archivo CSV o XLSX
+                              </p>
+                           </div>
+                           <!-- FORM PRINCIPAL -->
+                           <form id="addNewMaivaForm" class="row g-4" enctype="multipart/form-data">
+                              <!-- Empresa -->
+                              <div class="col-12">
+                                 <label class="form-label">Selecciona una empresa</label>
+                                 <select class="form-select" required>
+                                    <option value="">iMony</option>
+                                    <option value="1">iCard</option>
+                                    <option value="2">ByPass</option>
+                                 </select>
+                              </div>
+                              <!-- Dropzone fake + input real -->
+                              <div class="col-12">
+                                 <div class="card">
+                                    <h5 class="card-header">Subir archivo</h5>
+                                    <div class="card-body">
+                                       <div class="dropzone-wrapper">
+                                          <!-- INPUT REAL -->
+                                          <!-- UI DROPZONE -->
+                                          <div class="dropzone ">
+                                             <input type="file" name="file" class="real-file-input" accept=".csv,.xlsx">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- Botones -->
+                                 <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary me-3">
+                                    Asignar
+                                    </button>
+                                    <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                                    Cancelar
+                                    </button>
+                                 </div>
+                           </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                   <!-- Footer -->
                   <footer class="content-footer footer bg-footer-theme">
                      <div class="container-xxl">
@@ -680,8 +879,6 @@
             <!-- / Layout page -->
          </div>
       </div>
-
-
       <!-- / Layout wrapper -->
       <!-- Core JS -->
       <!-- build:js assets/vendor/js/theme.js  -->
@@ -697,7 +894,6 @@
       <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
       <script src="assets/vendor/libs/swiper/swiper.js"></script>
       <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-     
       <!-- libreías para exportar -->
       <!-- DataTables Buttons -->
       <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
@@ -709,11 +905,24 @@
       <script src="assets/js/main.js"></script>
       <!-- Script para la tabla -->
       <script src="assets/vendor/js/search-tabla.js"></script>
-  
+      <!-- scrpt del datepicker -->
+      
+<script>
+   document.getElementById('btnExportExcel').addEventListener('click', () => {
+  document.querySelector('.export-excel').click();
+});
 
-   
 
-    
-     
+document.getElementById('btnClearFilters').addEventListener('click', () => {
+  document.getElementById('card-filters').value = '';
+  document.getElementById('card-name').value = '';
+  document.getElementById('start-date').value = '';
+  document.getElementById('end-date').value = '';
+  document.getElementById('transaction-type').value = '';
+});
+
+</script>
+
+      
    </body>
 </html>

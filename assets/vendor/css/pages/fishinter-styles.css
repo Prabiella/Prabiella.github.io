@@ -214,9 +214,43 @@ color-mix(in sRGB, var(--bs-base-color) 22%, var(--bs-paper-bg));
 }
 
 
+/* stilos del tab */
+
+/* Color base */
+.gestion-card .nav-link {
+  color: #877742!important;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.25s ease;
+  font-weight: 500;
+}
+
+/* Hover */
+.gestion-card .nav-link:hover {
+  color:#b08956!important; 
+ 
+}
+
+/* Activo */
+.gestion-card .nav-link.active {
+  color: #877742!important; /* verde */
+
+}
+
+/* Quita el azul default de Bootstrap */
+.nav-tabs .nav-link {
+  border: none !important;
+}
 
 
+/* Cuando gestion-card está en el mismo elemento */
+.nav-link.gestion-card {
+  color: #877742 !important;
+}
 
+.nav-link.gestion-card:hover {
+  color: #b08956 !important;
+}
 
 
 
