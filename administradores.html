@@ -75,8 +75,8 @@
                   </a>
                </li>
                <!-- Usuarios -->
-               <li class="menu-item active">
-                  <a href="javascript:void(0);" class="menu-link d-flex align-items-center gap-2">
+               <li class="menu-item">
+                  <a href="usuarios.html" class="menu-link d-flex align-items-center gap-2">
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
@@ -120,8 +120,8 @@
                   </a>
                </li>
                <!-- Administradores -->
-               <li class="menu-item">
-                  <a href="administradores.html" class="menu-link d-flex align-items-center gap-2">
+               <li class="menu-item active">
+                  <a href="#" class="menu-link d-flex align-items-center gap-2">
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
@@ -131,7 +131,7 @@
                      </svg>
                      <div>Administradores</div>
                   </a>
-                
+                 
                </li>
                <!-- Gestión de tarjetas -->
                <li class="menu-header small">
@@ -139,7 +139,7 @@
                </li>
                <!-- Tarjetas -->
                <li class="menu-item">
-                  <a href="javascript:void(0);" class="menu-link menu-toggle d-flex align-items-center gap-2">
+                  <a href="#" class="menu-link menu-toggle d-flex align-items-center gap-2">
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastercard">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M11 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -287,16 +287,10 @@
                                              data-bs-toggle="modal" data-bs-target="#addNewUser">
                                           <span class="d-flex align-items-center gap-2">
                                           <i class="icon-base ti tabler-plus icon-sm"></i>
-                                          <span class="d-none d-sm-inline-block">Agregar Usuario</span>
+                                          <span class="d-none d-sm-inline-block">Agregar Administrador</span>
                                           </span>
                                           </button>
-                                          <button class="btn create-new btn-primary" tabindex="0" type="button"
-                                             data-bs-toggle="modal" data-bs-target="#addNewMaiva">
-                                          <span class="d-flex align-items-center gap-2">
-                                          <i class="icon-base ti tabler-user-check icon-sm"></i>
-                                          <span class="d-none d-sm-inline-block">Asignación Masiva</span>
-                                          </span>
-                                          </button>
+                                         
                                        </div>
                                     </div>
                                  </div>
@@ -309,13 +303,11 @@
                                        <thead>
                                           <tr>
                                              <th>Nombre</th>
-                                             <th>Apellido paterno</th>
-                                             <th>Apellido materno</th>
-                                             <th>Email</th>
-                                             <th>Teléfono</th>
-                                             <th>Rol</th>
+                                             <th>Correo</th>
                                              <th>Empresa</th>
-                                             <th>Estatus</th>
+                                             <th>Rol</th>
+                                             <th>Fecha de creación</th>
+                                             <th>Status</th>
                                              <th>Acciones</th>
                                           </tr>
                                        </thead>
@@ -323,16 +315,14 @@
                                           <!-- filas -->
                                        <tbody>
                                           <tr>
-                                             <td>Carlos</td>
-                                             <td>Pérez</td>
-                                             <td>Sánchez</td>
-                                             <td>carlos.perez@globex.com</td>
-                                             <td>555-123-4567</td>
-                                             <td>Usuario</td>
-                                             <td>Globex</td>
-                                             <td>
-                                                <span class="badge bg-label-warning">Suspendido</span>
-                                             </td>
+                                             <td>Carlos Pérez</td>
+      <td>carlos.perez@globex.com</td>
+      <td>Globex</td>
+      <td>Administrador</td>
+      <td>2024-11-15</td>
+      <td>
+        <span class="badge bg-label-success">Activo</span>
+      </td>
                                              <td>
                                                 <div class="d-flex align-items-center gap-2">
                                                    <!-- Más acciones (3 puntos) -->
@@ -355,27 +345,18 @@
                                                          </a>
                                                       </div>
                                                    </div>
-                                                   <!-- Tarjeta -->
-                                                   <button 
-                                                      class="btn btn-sm btn-primary d-flex align-items-center gap-1 waves-effect"
-                                                      data-bs-toggle="modal"
-                                                      data-bs-target="#addCardUser">
-                                                   <i class="icon-base ti tabler-credit-card icon-18px"></i>
-                                                   Tarjeta
-                                                   </button>
+                                               
                                                 </div>
                                              </td>
                                           </tr>
                                           <tr>
-                                             <td>Ana</td>
-                                             <td>López</td>
-                                             <td>Martínez</td>
+                                             <td>Ana López</td>
                                              <td>ana.lopez@globex.com</td>
-                                             <td>555-987-6543</td>
-                                             <td>Usuario</td>
                                              <td>Globex</td>
+                                             <td>Usuario</td>
+                                             <td>2024-12-02</td>
                                              <td>
-                                                <span class="badge bg-label-secondary">Inactivo</span>
+                                               <span class="badge bg-label-warning">Suspendido</span>
                                              </td>
                                              <td>
                                                 <div class="d-flex align-items-center gap-2">
@@ -399,28 +380,19 @@
                                                          </a>
                                                       </div>
                                                    </div>
-                                                   <!-- Tarjeta -->
-                                                   <button 
-                                                      class="btn btn-sm btn-primary d-flex align-items-center gap-1 waves-effect"
-                                                      data-bs-toggle="modal"
-                                                      data-bs-target="#addCardUser">
-                                                   <i class="icon-base ti tabler-credit-card icon-18px"></i>
-                                                   Tarjeta
-                                                   </button>
+                                                
                                                 </div>
                                              </td>
                                           </tr>
                                           <tr>
-                                             <td>Luis</td>
-                                             <td>Ramírez</td>
-                                             <td>Torres</td>
-                                             <td>luis.ramirez@globex.com</td>
-                                             <td>555-456-7890</td>
-                                             <td>Usuario</td>
-                                             <td>Globex</td>
-                                             <td>
-                                                <span class="badge bg-label-success">Activo</span>
-                                             </td>
+                                             <td>Luis Ramírez</td>
+      <td>luis.ramirez@globex.com</td>
+      <td>Globex</td>
+      <td>Usuario</td>
+      <td>2025-01-05</td>
+      <td>
+        <span class="badge bg-label-secondary">Inactivo</span>
+      </td>
                                              <td>
                                                 <div class="d-flex align-items-center gap-2">
                                                    <!-- Más acciones (3 puntos) -->
@@ -443,14 +415,7 @@
                                                          </a>
                                                       </div>
                                                    </div>
-                                                   <!-- Tarjeta -->
-                                                   <button 
-                                                      class="btn btn-sm btn-primary d-flex align-items-center gap-1 waves-effect"
-                                                      data-bs-toggle="modal"
-                                                      data-bs-target="#addCardUser">
-                                                   <i class="icon-base ti tabler-credit-card icon-18px"></i>
-                                                   Tarjeta
-                                                   </button>
+                                                 
                                                 </div>
                                              </td>
                                           </tr>
@@ -710,134 +675,86 @@
                      </div>
                   </div>
                </div>
-               <!-- Add New User -->
-               <div class="modal fade" id="addNewUser" tabindex="-1" aria-hidden="true">
-                  <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
-                     <div class="modal-content">
-                        <div class="modal-body">
-                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                           <div class="text-center mb-6">
-                              <h4 class="address-title mb-2 text-white">Nuevo Usuario</h4>
-                              <p class="address-subtitle text-white">Agrega los datos del usuario</p>
-                           </div>
-                           <form id="addNewAddressForm" class="row g-4" onsubmit="return false">
-                              <!-- Nombre usuario -->
-                              <div class="col-12">
-                                 <label class="form-label">Nombre</label>
-                                 <input type="text" class="form-control" placeholder="Nombre" required>
-                              </div>
-                              <!-- Apellido Paterno -->
-                              <div class="col-12 col-md-6">
-                                 <label class="form-label">Apellido Paterno</label>
-                                 <input type="text" class="form-control" placeholder="Apellido Paterno" required>
-                              </div>
-                              <!-- Apellido Materno -->
-                              <div class="col-12 col-md-6">
-                                 <label class="form-label">Apellido Materno</label>
-                                 <input type="text" class="form-control" placeholder="Apellido Materno" required>
-                              </div>
-                              <!-- Correo electrónico -->
-                              <div class="col-12 col-md-6">
-                                 <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                                 <input
-                                    type="email"
-                                    class="form-control"
-                                    id="exampleFormControlInput1"
-                                    placeholder="nombre@dominio.com" />
-                              </div>
-                              <!-- Teléfono -->
-                              <div class="col-12 col-md-6">
-                                 <label class="form-label">Teléfono</label>
-                                 <input type="number" class="form-control" placeholder="555-555-555" required>
-                              </div>
-                              <!-- Rol -->
-                              <div class="col-12 col-md-6">
-                                 <label class="form-label">Rol</label>
-                                 <select class="form-select">
-                                    <option value="activo">Soporte</option>
-                                    <option value="inactivo">Admin</option>
-                                    <option value="pendiente">Superadmin</option>
-                                 </select>
-                              </div>
-                              <!-- Rol -->
-                              <div class="col-12 col-md-6">
-                                 <label class="form-label">Estatus</label>
-                                 <select class="form-select">
-                                    <option value="activo">Activo</option>
-                                    <option value="inactivo">Inactivo</option>
-                                    <option value="pendiente">Pendiente</option>
-                                 </select>
-                              </div>
-                              <!-- Empresa -->
-                              <div class="col-12">
-                                 <label class="form-label">Empresa</label>
-                                 <input type="text" class="form-control" placeholder="Nombre de la empresa" required>
-                              </div>
-                              <!-- Botones -->
-                              <div class="col-12 text-center mt-4">
-                                 <button type="submit" class="btn btn-primary me-3">
-                                 Guardar
-                                 </button>
-                                 <button type="reset" class="btn btn-label-secondary" data-bs-dismiss="modal">
-                                 Cancelar
-                                 </button>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- Add New Asignación -->
-               <div class="modal fade" id="addNewMaiva" tabindex="-1" aria-hidden="true">
-                  <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
-                     <div class="modal-content">
-                        <div class="modal-body">
-                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                           <div class="text-center mb-6">
-                              <h4 class="address-title mb-2 text-white">Asignación Masiva de saldo</h4>
-                              <p class="address-subtitle text-white">
-                                 Para realizar una asignación masiva, debes cargar un archivo CSV o XLSX
-                              </p>
-                           </div>
-                           <!-- FORM PRINCIPAL -->
-                           <form id="addNewMaivaForm" class="row g-4" enctype="multipart/form-data">
-                              <!-- Empresa -->
-                              <div class="col-12">
-                                 <label class="form-label">Selecciona una empresa</label>
-                                 <select class="form-select" required>
-                                    <option value="">iMony</option>
-                                    <option value="1">iCard</option>
-                                    <option value="2">ByPass</option>
-                                 </select>
-                              </div>
-                              <!-- Dropzone fake + input real -->
-                              <div class="col-12">
-                                 <div class="card">
-                                    <h5 class="card-header">Subir archivo</h5>
-                                    <div class="card-body">
-                                       <div class="dropzone-wrapper">
-                                          <!-- INPUT REAL -->
-                                          <!-- UI DROPZONE -->
-                                          <div class="dropzone ">
-                                             <input type="file" name="file" class="real-file-input" accept=".csv,.xlsx">
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- Botones -->
-                                 <div class="col-12 text-center mt-4">
-                                    <button type="submit" class="btn btn-primary me-3">
-                                    Asignar
-                                    </button>
-                                    <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
-                                    Cancelar
-                                    </button>
-                                 </div>
-                           </form>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+               <!-- Add New Administrador -->
+
+<div class="modal fade" id="addNewUser" tabindex="-1" aria-hidden="true">
+   <div class="modal-dialog modal-lg modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-body p-4">
+ 
+         <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+ 
+         <div class="text-center mb-4">
+           <h4 class="mb-2 text-white text-center">Nuevo Administrador</h4>
+           <p class="text-muted text-center">Agrega los datos del administrador</p>
+         </div>
+ 
+         <form id="addNewUserForm" class="row g-3">
+ 
+           <!-- Nombre -->
+           <div class="col-md-6">
+             <label class="form-label">Nombre completo</label>
+             <input type="text" class="form-control" placeholder="Ej: Carlos Pérez" required>
+           </div>
+ 
+           <!-- Correo -->
+           <div class="col-md-6">
+             <label class="form-label">Correo</label>
+             <input type="email" class="form-control" placeholder="correo@empresa.com" required>
+           </div>
+ 
+           <!-- Empresa -->
+           <div class="col-md-6">
+             <label class="form-label">Empresa</label>
+             <input type="text" class="form-control" placeholder="Globex" required>
+           </div>
+ 
+           <!-- Rol -->
+           <div class="col-md-6">
+             <label class="form-label">Rol</label>
+             <select class="form-select" required>
+               <option value="">Selecciona un rol</option>
+               <option value="Administrador">Administrador</option>
+               <option value="Usuario">Usuario</option>
+             </select>
+           </div>
+ 
+           <!-- Status -->
+           <div class="col-md-6">
+             <label class="form-label">Status</label>
+             <select class="form-select" required>
+               <option value="Activo">Activo</option>
+               <option value="Inactivo">Inactivo</option>
+               <option value="Suspendido">Suspendido</option>
+             </select>
+           </div>
+ 
+           <!-- Fecha de creación (auto) -->
+           <div class="col-md-6">
+            <label class="form-label" for="create-date">Fecha de creación</label>
+            <input type="date" id="create-date" class="form-control" />
+          </div>
+
+          
+ 
+           <!-- Botones -->
+           <div class="col-12 text-center mt-4">
+             <button type="submit" class="btn btn-primary me-2">
+               Guardar
+             </button>
+             <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+               Cancelar
+             </button>
+           </div>
+ 
+         </form>
+ 
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+             
                   <!-- Footer -->
                   <footer class="content-footer footer bg-footer-theme">
                      <div class="container-xxl">
